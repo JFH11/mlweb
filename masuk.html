@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: var(--coklat-color);
+        }
+
+        header {
+            justify-content: left;
+            padding: 1rem 2.5%;
+        }
+
+        .logo {
+            position: relative;
+            left: 0;
+            margin-right: 1rem;
+        }
+
+        .hdr-text {
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            font-weight: 500;
+            color: var(--font-color);
+        }
+
+        .form-container {
+            position: relative;
+            width: 400px;
+            height: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            color: var(--font-color);
+            background: var(--component-color);
+            margin: 2rem 0 2rem 0;
+        }
+
+        .form-container h1 {
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .form-container p {
+            font-size: 1rem;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container form label {
+            font-size: 0.9rem;
+            font-family: sans-serif;
+            margin-bottom: 0.1rem;
+        }
+
+        #username,
+        #password,
+        #password2 {
+            width: 100%;
+            height: 2rem;
+            border: 1px solid rgba(167, 167, 167, 0.582);
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            outline: none;
+        }
+
+        #username:focus,
+        #password:focus,
+        #password2:focus {
+            border-color: var(--coklat-color);
+            box-shadow: 0 0 5px var(--coklat-color);
+        }
+
+        .password-container {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .lupa-password {
+            font-size: 0.8rem;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: var(--coklat-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .lupa-password a {
+            text-decoration: none;
+            color: var(--coklat-color);
+        }
+
+        #daftar-btn {
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            border-radius: 2px;
+            background: var(--coklat-color);
+            color: var(--component-color);
+            font-size: 1rem;
+            font-family: sans-serif;
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+        }
+
+        #daftar-btn:hover {
+            background: #b99467;
+            color: var(--component-color);
+        }
+
+        .have-account {
+            margin-top: 0.2rem;
+            font-size: 0.8rem;
+            font-family: sans-serif;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .have-account a {
+            color: var(--coklat-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo"></img>
+        <div class="hdr-text">Login</div>
+    </header>
+
+    <div class="form-container">
+        <h1>Login</h1>
+        <p>Silahkan masuk ke akun anda.</p>
+        <form action="" method="">
+
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+
+            <div class="lupa-password">
+                <a href="lupa-password.html" onclick="return showLoader(event)">Lupa Password?</a>
+            </div>
+
+            <button type="submit" id="daftar-btn">Login</button>
+
+            <div class="have-account">Belum punya akun?
+                <a href="daftar.html" onclick="return showLoader(event)">Daftar</a>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container-loader" id="container-loader">
+        <div class="loading">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Logo</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-container">
+                <a href="about.html">Tentang Kami</a>
+                <a href="">Kebijakan Privasi</a>
+                <a href="">Syarat dan Ketentuan</a>
+            </div>
+        </div>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Layanan Pelanggan</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-container">
+                <a href="">Bantuan</a>
+                <a href="">Cara Pembelian & Pembayaran</a>
+            </div>
+        </div>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Daftar & Login</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-container">
+                <a href="daftar.html">Daftar</a>
+                <a href="masuk.html">Login</a>
+            </div>
+        </div>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Kategori Produk</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-container">
+                <a href="">Pria</a>
+                <a href="">Wanita</a>
+            </div>
+        </div>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Kontak Kami</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-container">
+                <a href="">Email</a>
+                <a href="">Telepon</a>
+                <a href="">Alamat</a>
+            </div>
+        </div>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Ikuti Kami</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-medsos">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="ftr-container">
+            <div class="ftr-title">Metode Pembayaran</div>
+            <div class="ftr-hr"></div>
+            <div class="ftr-link-container">
+                <div class="ftr-link-2">
+                    <img src="img/payment/gopay.png" alt="">
+                    <img src="img/payment/dana.png" alt="">
+                    <img src="img/payment/ovo.png" alt="">
+                    <img src="img/payment/bank.png" alt="">
+                    <img src="img/payment/bca.png" alt="">
+                    <img src="img/payment/paypal.png" alt="">
+                    <img src="img/payment/seabank.png" alt="">
+                    <img src="img/payment/qris.png" alt="">
+                    <img src="img/payment/linkaja.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
+    </footer>
+
+    <script src="js/masuk.js"></script>
+</body>
+
+</html>

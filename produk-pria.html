@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko baju</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo"></img>
+        <div class="container-search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Cari disini">
+        </div>
+        <nav>
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+            <div class="nav-hr"></div>
+
+            <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)">Login</a>
+            <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)">Daftar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+
+            <div class="slider">
+                <div class="slides" id="slide-track">
+                    <div class="slide"><img src="img/banner/banner.png"></div>
+                    <div class="slide"><img src="img/banner/banner-2.png"></div>
+                    <div class="slide"><img src="img/banner/banner-3.png"></div>
+                </div>
+                <div class="dots" id="dots"></div>
+            </div>
+
+        </section>
+        <section id="product">
+            <div class="title-product">Pilihan Terbaik Untukmu</div>
+            <div class="container-button-url">
+                <a href="/" onclick="return false">Pria</a>
+                <a href="/produk-wanita.html#product" onclick="return showLoader(event)">Wanita</a>
+                <a href="/index.html#product" onclick="return showLoader(event)">Semua</a>
+            </div>
+
+            <div class="container-product">
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/200-square/aphluv/1997/1/1/0ece04126aed4e21b1da436caa8752bd~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Wush Club 16S Boxy Fit Heavyweight Tee</div>
+                    <div class="product-price">Rp 64.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/6/26/6a6ce502-5535-4dff-9a5f-65c827ad1b8d.jpg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Infinide T-Shirt Kaos Polos BIG OVERSIZE</div>
+                    <div class="product-price">Rp 50.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/ea7cfcfa10f0402ea817ff3ab54e08c7~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">POLOS BOXY FIT OVERSIZE T SHIRT</div>
+                    <div class="product-price">Rp 54.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/6/23/cd8c6f23-233e-4f57-b5ba-4464de64c1bd.jpg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Okechuku SAM Celana Panjang Pria Loose Pants</div>
+                    <div class="product-price">Rp 125.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/4/11/67e29a8a-41ae-44f0-91cf-f0b0305586c7.jpg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Madless Celana Pendek Pria Hitam</div>
+                    <div class="product-price">Rp 67.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/56d6dee83a1b4100a7bb404d25b4fa15~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">FortKlass Kaos SPORTY Regular Fit</div>
+                    <div class="product-price">Rp 54.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/bcdd6328ec284e28b6b8f40ef0c260b8~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Roughneck H452 Black Aura Camouflage 1991</div>
+                    <div class="product-price">Rp 54.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/o3syd0/1997/1/1/43e6c32d98204080a8922939b655f477~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria</div>
+                    <div class="product-price">Rp99.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/9d4320da367e4609b0c56c656adf00a7~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium</div>
+                    <div class="product-price">Rp210.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/45c8d19be4d14afcb9c77ae2d7b40bdb~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Ry Lifestyle - Kaos Lengan Panjang Rylt Logo Hitam Unisex</div>
+                    <div class="product-price">Rp63.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/727af8342d004b36bfdabe3d91812a64~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">Ry Lifestyle - Kaos Lengan Panjang R Rolling Logo Gold Unisex</div>
+                    <div class="product-price">Rp63.000</div>
+                </a>
+
+                <a href="" class="product-card">
+                    <img class="product-image"
+                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/dcb5f93eae4742a9a6c530ccd7f50137~.jpeg.webp?ect=4g"
+                        alt="">
+                    <div class="product-name">KAMB Celana lari pria dan celana ketat 2 potong</div>
+                    <div class="product-price">Rp109.000</div>
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Logo</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="about.html" onclick="return showLoader(event)">Tentang Kami</a>
+                    <a href="kebijakan-privasi.html" onclick="return showLoader(event)">Kebijakan Privasi</a>
+                    <a href="" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Layanan Pelanggan</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="" onclick="return showLoader(event)">Bantuan</a>
+                    <a href="" onclick="return showLoader(event)">Cara Pembelian & Pembayaran</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Daftar & Login</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="daftar.html" onclick="return showLoader(event)">Daftar</a>
+                    <a href="masuk.html" onclick="return showLoader(event)">Login</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kategori Produk</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="" onclick="return showLoader(event)">Pria</a>
+                    <a href="" onclick="return showLoader(event)">Wanita</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kontak Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="mailto:">Email</a>
+                    <a href="https://wa.me/">Telepon</a>
+                    <a href="">Alamat</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Ikuti Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-medsos">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Metode Pembayaran</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <div class="ftr-link-2">
+                        <img src="img/payment/gopay.png" alt="">
+                        <img src="img/payment/dana.png" alt="">
+                        <img src="img/payment/ovo.png" alt="">
+                        <img src="img/payment/bank.png" alt="">
+                        <img src="img/payment/bca.png" alt="">
+                        <img src="img/payment/paypal.png" alt="">
+                        <img src="img/payment/seabank.png" alt="">
+                        <img src="img/payment/qris.png" alt="">
+                        <img src="img/payment/linkaja.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
+        </footer>
+    </main>
+
+    <div class="container-loader" id="container-loader">
+        <div class="loading">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <div class="keranjang"></div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
