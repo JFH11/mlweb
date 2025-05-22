@@ -7,6 +7,11 @@
     <title>Toko baju</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
+        <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
 </head>
 
 <body>
@@ -45,7 +50,8 @@
             </div>
 
         </section>
-        <section id="product">
+
+        <section id="product" x-data="produk">
             <div class="title-product">Pilihan Terbaik Untukmu</div>
             <div class="container-button-url">
                 <a href="/" onclick="return false">Semua</a>
@@ -54,77 +60,24 @@
             </div>
 
             <div class="container-product">
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/200-square/aphluv/1997/1/1/0ece04126aed4e21b1da436caa8752bd~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Wush Club 16S Boxy Fit Heavyweight Tee</div>
-                    <div class="product-price">Rp 64.000</div>
-                </a>
 
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/6/26/6a6ce502-5535-4dff-9a5f-65c827ad1b8d.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Infinide T-Shirt Kaos Polos BIG OVERSIZE</div>
-                    <div class="product-price">Rp 50.000</div>
-                </a>
+                <template x-for="product in data" :key="product.namaProduk">
+                    <a 
+                    href="" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    :href="`detail-produk.html?nama=${encodeURIComponent(product.namaAkun)}`">
+                        <img 
+                            class="product-image"
+                            :src="`img/product/${product.gambarProduk}`"
+                            :alt="product.namaProduk"
+                        >
+                        <div class="product-name" x-text="product.namaProduk"></div>
+                        <div class="product-price" x-text="product.hargaProduk"></div>
+                    </a>
+                </template>
 
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/ea7cfcfa10f0402ea817ff3ab54e08c7~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">POLOS BOXY FIT OVERSIZE T SHIRT</div>
-                    <div class="product-price">Rp 54.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/6/23/cd8c6f23-233e-4f57-b5ba-4464de64c1bd.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Okechuku SAM Celana Panjang Pria Loose Pants</div>
-                    <div class="product-price">Rp 125.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/4/11/67e29a8a-41ae-44f0-91cf-f0b0305586c7.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Madless Celana Pendek Pria Hitam</div>
-                    <div class="product-price">Rp 67.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/56d6dee83a1b4100a7bb404d25b4fa15~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">FortKlass Kaos SPORTY Regular Fit</div>
-                    <div class="product-price">Rp 54.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/6/28/87991e67-7a70-4dcd-b6bd-b7695590e31a.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Nathalie Short Pants Wanita Ice Silk</div>
-                    <div class="product-price">Rp 46.800</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/9/28/48e66558-c5ff-4411-acbf-2d233cc24345.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Celana Pendek Wanita Hot Pants Kekinian</div>
-                    <div class="product-price">Rp 17.499</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/bcdd6328ec284e28b6b8f40ef0c260b8~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Roughneck H452 Black Aura Camouflage 1991</div>
-                    <div class="product-price">Rp 54.000</div>
-                </a>
+                <!-- 
 
                 <a href="" class="product-card">
                     <img class="product-image"
@@ -220,7 +173,7 @@
                         alt="">
                     <div class="product-name">Celana Kulot - Kulot Linen - Celana Linen Wanita</div>
                     <div class="product-price">Rp51.000</div>
-                </a>
+                </a> -->
 
             </div>
 
@@ -319,6 +272,7 @@
     <div class="keranjang"></div>
 
     <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 
