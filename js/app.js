@@ -16,31 +16,31 @@ document.addEventListener('alpine:init', () => {
 
             {
                 namaProduk: 'POLOS BOXY FIT OVERSIZE T SHIRT',
-                gambarProduk: 'POLOS BOXY FIT.webp',
+                gambarProduk: 'POLOS BOXY FIT Hitam.webp',
                 hargaProduk: 'Rp 54.000',
             },
 
             {
                 namaProduk: 'Okechuku SAM Celana Panjang Pria Loose Pants',
-                gambarProduk: 'Okechuku SAM.webp',
+                gambarProduk: 'Okechuku SAM Abu Tua.webp',
                 hargaProduk: 'Rp 125.000',
             },
 
             {
-                namaProduk: 'Madless Celana Pendek Pria Hitam',
-                gambarProduk: 'Madless Celana Pendek.webp',
+                namaProduk: 'Madless Celana Pendek Pria Hitam | Shorts',
+                gambarProduk: 'Madless Celana Pendek Hitam.webp',
                 hargaProduk: 'Rp 67.000',
             },
 
             {
-                namaProduk: 'FortKlass Kaos SPORTY Regular Fit',
+                namaProduk: 'FortKlass Kaos SPORTY Regular Fit Kaos Sablon 24S 30S',
                 gambarProduk: 'FortKlass Kaos SPORTY Regular Fit.webp',
                 hargaProduk: 'Rp 54.000',
             },
 
             {
                 namaProduk: 'Nathalie Short Pants Wanita Ice Silk',
-                gambarProduk: 'Nathalie Short Pants Wanita Ice Silk.webp',
+                gambarProduk: 'Nathalie Short Pants Wanita Ice Silk Pink.webp',
                 hargaProduk: 'Rp 46.800',
             },
 
@@ -55,6 +55,18 @@ document.addEventListener('alpine:init', () => {
                 gambarProduk: 'Roughneck H452 Black Aura Camouflage 1991.webp',
                 hargaProduk: 'Rp 54.000',
             },
+
+            {
+                namaProduk: 'Kemeja Lengan Panjang Kerah Berdiri Sifon',
+                gambarProduk: 'Kemeja Lengan Panjang Kerah Berdiri Sifon.webp',
+                hargaProduk: 'Rp 139.000',
+            },
+
+            {
+                namaProduk: 'setelan celana kulot kaos wanita',
+                gambarProduk: 'setelan celana kulot kaos wanita.webp',
+                hargaProduk: 'RRp 118.900',
+            }
         ],
 
         searchQuery: '',

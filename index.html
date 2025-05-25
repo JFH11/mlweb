@@ -66,7 +66,7 @@
                     href="" 
                     class="product-card"
                     onclick="return showLoader(event)"
-                    :href="`detail-produk.html?nama=${encodeURIComponent(product.namaAkun)}`">
+                    :href="`detail_produk.html?produk=${encodeURIComponent(product.namaProduk)}`">
                         <img 
                             class="product-image"
                             :src="`img/product/${product.gambarProduk}`"
@@ -78,22 +78,6 @@
                 </template>
 
                 <!-- 
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2024/4/6/7587d3a7-3532-42aa-ac9f-87b1f030d84f.png.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Kemeja Lengan Panjang Kerah Berdiri Sifon</div>
-                    <div class="product-price">Rp 139.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/7/19/fb32fb6e-a678-4581-aa11-ce662dc6f6ab.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">setelan celana kulot kaos wanita set pakaian casual</div>
-                    <div class="product-price">Rp 118.900</div>
-                </a>
 
                 <a href="" class="product-card">
                     <img class="product-image"
