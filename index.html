@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko baju</title>
+    <title>Toko Bersama</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
         <script
@@ -17,7 +17,7 @@
 <body>
 
     <header>
-        <img class="logo"></img>
+        <img class="logo" src="img/logo/logo.webp"></img>
         <div class="container-search-bar">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Cari disini">
@@ -51,7 +51,7 @@
 
         </section>
 
-        <section id="product" x-data="produk">
+        <section id="product" x-data="semua_produk">
             <div class="title-product">Pilihan Terbaik Untukmu</div>
             <div class="container-button-url">
                 <a href="/" onclick="return false">Semua</a>
@@ -61,7 +61,7 @@
 
             <div class="container-product">
 
-                <template x-for="product in data" :key="product.namaProduk">
+                <template x-for="product in semua_produk" :key="product.namaProduk">
                     <a 
                     href="" 
                     class="product-card"
@@ -76,88 +76,6 @@
                         <div class="product-price" x-text="product.hargaProduk"></div>
                     </a>
                 </template>
-
-                <!-- 
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/12/18/fce0d936-f960-4203-beef-3b208b002376.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">long dress anissa/pakaian wanita/fashion wanita</div>
-                    <div class="product-price">Rp 85.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/o3syd0/1997/1/1/43e6c32d98204080a8922939b655f477~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria</div>
-                    <div class="product-price">Rp99.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/9d4320da367e4609b0c56c656adf00a7~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium</div>
-                    <div class="product-price">Rp210.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/45c8d19be4d14afcb9c77ae2d7b40bdb~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Ry Lifestyle - Kaos Lengan Panjang Rylt Logo Hitam Unisex</div>
-                    <div class="product-price">Rp63.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/727af8342d004b36bfdabe3d91812a64~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Ry Lifestyle - Kaos Lengan Panjang R Rolling Logo Gold Unisex</div>
-                    <div class="product-price">Rp63.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/11/2/87cd0062-e3f7-459f-a83d-5ec28cb0ed5e.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Baju Gamis Muslim Syari Wanita Dewasa Terbaru Premium</div>
-                    <div class="product-price">Rp225.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/5/21/08fadd8e-9ff7-436d-8334-0d877fc12004.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">STATUS KAOS T SHIRT DRESS WANITA</div>
-                    <div class="product-price">Rp94.900</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/dcb5f93eae4742a9a6c530ccd7f50137~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">KAMB Celana lari pria dan celana ketat 2 potong</div>
-                    <div class="product-price">Rp109.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/5/25/efd061de-5744-4a26-be7c-aedcbd799d17.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Celana Kulot Panjang Jeans Wanita Fit Super Jumbo 100kg Bigsize</div>
-                    <div class="product-price">Rp180.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/9/8/badb11f7-5bef-4e37-9107-564354004dc5.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Celana Kulot - Kulot Linen - Celana Linen Wanita</div>
-                    <div class="product-price">Rp51.000</div>
-                </a> -->
 
             </div>
 

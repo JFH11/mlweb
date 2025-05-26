@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko baju</title>
+    <title>Produk - Pria</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
 </head>
 
 <body>
 
     <header>
-        <img class="logo"></img>
+        <img class="logo" src="img/logo/logo.webp"></img>
         <div class="container-search-bar">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Cari disini">
@@ -45,7 +49,7 @@
             </div>
 
         </section>
-        <section id="product">
+        <section id="product" x-data="produk_pria">
             <div class="title-product">Pilihan Terbaik Untukmu</div>
             <div class="container-button-url">
                 <a href="/" onclick="return false">Pria</a>
@@ -54,101 +58,22 @@
             </div>
 
             <div class="container-product">
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/200-square/aphluv/1997/1/1/0ece04126aed4e21b1da436caa8752bd~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Wush Club 16S Boxy Fit Heavyweight Tee</div>
-                    <div class="product-price">Rp 64.000</div>
-                </a>
 
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/6/26/6a6ce502-5535-4dff-9a5f-65c827ad1b8d.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Infinide T-Shirt Kaos Polos BIG OVERSIZE</div>
-                    <div class="product-price">Rp 50.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/ea7cfcfa10f0402ea817ff3ab54e08c7~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">POLOS BOXY FIT OVERSIZE T SHIRT</div>
-                    <div class="product-price">Rp 54.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2024/6/23/cd8c6f23-233e-4f57-b5ba-4464de64c1bd.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Okechuku SAM Celana Panjang Pria Loose Pants</div>
-                    <div class="product-price">Rp 125.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2022/4/11/67e29a8a-41ae-44f0-91cf-f0b0305586c7.jpg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Madless Celana Pendek Pria Hitam</div>
-                    <div class="product-price">Rp 67.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/56d6dee83a1b4100a7bb404d25b4fa15~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">FortKlass Kaos SPORTY Regular Fit</div>
-                    <div class="product-price">Rp 54.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/bcdd6328ec284e28b6b8f40ef0c260b8~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Roughneck H452 Black Aura Camouflage 1991</div>
-                    <div class="product-price">Rp 54.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/o3syd0/1997/1/1/43e6c32d98204080a8922939b655f477~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria</div>
-                    <div class="product-price">Rp99.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/9d4320da367e4609b0c56c656adf00a7~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium</div>
-                    <div class="product-price">Rp210.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/45c8d19be4d14afcb9c77ae2d7b40bdb~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Ry Lifestyle - Kaos Lengan Panjang Rylt Logo Hitam Unisex</div>
-                    <div class="product-price">Rp63.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/727af8342d004b36bfdabe3d91812a64~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">Ry Lifestyle - Kaos Lengan Panjang R Rolling Logo Gold Unisex</div>
-                    <div class="product-price">Rp63.000</div>
-                </a>
-
-                <a href="" class="product-card">
-                    <img class="product-image"
-                        src="https://images.tokopedia.net/img/cache/500-square/aphluv/1997/1/1/dcb5f93eae4742a9a6c530ccd7f50137~.jpeg.webp?ect=4g"
-                        alt="">
-                    <div class="product-name">KAMB Celana lari pria dan celana ketat 2 potong</div>
-                    <div class="product-price">Rp109.000</div>
-                </a>
+                <template x-for="product in produk_pria" :key="product.namaProduk">
+                    <a 
+                    href="" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    :href="`detail_produk.html?produk=${encodeURIComponent(product.namaProduk)}`">
+                        <img 
+                            class="product-image"
+                            :src="`img/product/${product.gambarProduk}`"
+                            :alt="product.namaProduk"
+                        >
+                        <div class="product-name" x-text="product.namaProduk"></div>
+                        <div class="product-price" x-text="product.hargaProduk"></div>
+                    </a>
+                </template>
 
             </div>
 
@@ -247,6 +172,7 @@
     <div class="keranjang"></div>
 
     <script src="js/index.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 

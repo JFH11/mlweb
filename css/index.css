@@ -31,8 +31,8 @@ header {
     z-index: 100;
     top: 0;
     width: 100%;
-    height: max-content;
-    padding: 1rem 0;
+    height: 80px;
+    padding: 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,8 +42,8 @@ header {
 .logo {
     position: absolute;
     left: 2.5%;
-    width: 100px;
-    height: 35px;
+    width: 130px;
+    height: 100%;
 }
 
 .container-search-bar {

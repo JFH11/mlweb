@@ -278,6 +278,190 @@ Flyman Nathalie memproduksi Celana pendek Perempuan dengan kelebihan :<br><br>
         namaCheckout: 'Nathalie Short Pants Wanita Ice Silk',
     },
 
+    {
+        namaProduk: 'Celana Pendek Wanita Hot Pants Kekinian',
+        terjual: '1 rb+',
+        rating: '⭐ 4.1 (104 Rating)',
+        hargaProduk: 'Rp 17.499',
+        hargaAngka: 17499,
+        stokProduk: '1245',
+        gambarProduk: [
+            'Celana Pendek Wanita Hot Pants Kekinian.webp',
+        ],
+        warna: ['Ungu'],
+        ukuran: ['S', 'M'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+
+            tersedia warna Ungu dengan ukuran:<br><br>
+            S<br>
+            M
+    `,
+        namaCheckout: 'Celana Pendek Wanita Hot Pants Kekinian',
+    },
+
+    {
+        namaProduk: 'Roughneck H452 Black Aura Camouflage 1991',
+        terjual: '1.5 rb+',
+        rating: '⭐ 4.4 (846 Rating)',
+        hargaProduk: 'Rp 54.000',
+        hargaAngka: 54000,
+        stokProduk: '2012',
+        gambarProduk: [
+            'Roughneck H452 Black Aura Camouflage 1991.webp',
+        ],
+        warna: ['Hitam'],
+        ukuran: ['M', 'L', 'XL'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+
+            tersedia warna hitam dengan ukuran:<br><br>
+            M: Lebar Dada 48cm, Panjang 67cm, P.Lengan 20cm<br>
+            L: Lebar Dada 50cm, Panjang 69cm, P.Lengan 21cm<br>
+            XL: Lebar Dada 52cm, Panjang 71cm, P.Lengan 22cm
+
+    `,
+        namaCheckout: 'Roughneck H452 Black Aura Camouflage 1991',
+    },
+
+    {
+        namaProduk: 'Kemeja Lengan Panjang Kerah Berdiri Sifon',
+        terjual: '1 rb+',
+        rating: '⭐ 4.1 (104 Rating)',
+        hargaProduk: 'Rp 139.000',
+        hargaAngka: 139000,
+        stokProduk: '666',
+        gambarProduk: [
+            'Kemeja Lengan Panjang Kerah Berdiri Sifon.webp',
+        ],
+        warna: ['Hijau'],
+        ukuran: ['M'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+            no caption
+    `,
+        namaCheckout: 'Kemeja Lengan Panjang Kerah Berdiri Sifon',
+    },
+
+
+    {
+        namaProduk: 'setelan celana kulot kaos wanita',
+        terjual: '1 rb+',
+        rating: '⭐ 4.1 (104 Rating)',
+        hargaProduk: 'Rp 120.000',
+        hargaAngka: 120000,
+        stokProduk: '696',
+        gambarProduk: [
+            'setelan celana kulot kaos wanita.webp',
+        ],
+        warna: ['Hijau'],
+        ukuran: ['S', 'M', 'L'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+            Matt Bahan Kaos Baby Terry<br><br>
+
+Matt Bahan bisa melar stretch<br>
+
+Baju Lengan Panjang<br>
+
+Pinggang Celana full karet bisa melar stretch<br>
+
+Panjangn Celana Kulot semata kaki<br>
+
+Saku Celana Kiri kanan<br>
+
+Gambar Baju Bordir<br><br>
+
+Warna tersedia Hijau<br>
+
+Ukuran tersedia one size S M L<br><br>
+
+setelan kulot nyaman di pakai bahannya lembut tebal bahan sedang tdk menerawang kualitas mutu terjamin hasil produksi sesuai foto
+
+    `,
+        namaCheckout: 'Setelan Celana Kulot Kaos Wanita',
+    },
+
+    {
+        namaProduk: 'long dress anissa/pakaian wanita/fashion wanita',
+        terjual: '239',
+        rating: '⭐ 4.8 (26 Rating)',
+        hargaProduk: 'Rp 85.000',
+        hargaAngka: 85000,
+        stokProduk: '289',
+        gambarProduk: [
+            'long dress anissa Putih.webp',
+            'long dress anissa Ungu.webp',
+        ],
+        warna: ['Putih', 'Ungu'],
+        ukuran: ['M', 'L'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+            Dress tutu anissa Bahan mosscrepe lapis tile ld100cm pj110cm blkg sleting jepang + ada belt obi bisa lepas `,
+        namaCheckout: 'long dress anissa/pakaian wanita/fashion wanita',
+    },
+
+    {
+        namaProduk: 'MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria',
+        terjual: '239',
+        rating: '⭐ 4.8 (26 Rating)',
+        hargaProduk: 'Rp99.000',
+        hargaAngka: 99000,
+        stokProduk: '289',
+        gambarProduk: [
+            'Maruso Baju Distro Hitam.webp',
+        ],
+        warna: ['Hitam'],
+        ukuran: ['M', 'L', 'XL'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+
+            Tersedia ukuran:<br><br>
+            M: Lebar Dada 48cm, Panjang 67cm, P.Lengan 20cm<br>
+            L: Lebar Dada 50cm, Panjang 69cm, P.Lengan 21cm<br>
+            XL: Lebar Dada 52cm, Panjang 71cm, P.Lengan 22cm<br><br>
+
+            dan Warna:<br>
+            Hitam
+            `,
+        namaCheckout: 'MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria',
+    },
+
+    {
+        namaProduk: 'Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium',
+        terjual: '239',
+        rating: '⭐ 4.8 (26 Rating)',
+        hargaProduk: 'Rp210.000',
+        hargaAngka: 210000,
+        stokProduk: '289',
+        gambarProduk: [
+            'kemeja kerah sanghai Hitam.webp',
+            'kemeja kerah sanghai Biru Muda.webp',
+        ],
+        warna: ['Hitam', 'Biru Muda'],
+        ukuran: ['M', 'L', 'XL'],
+        kondisiProduk: 'Baru',
+        deskripsiProduk:
+            `
+
+            Tersedia ukuran:<br><br>
+            M: Lebar Dada 48cm, Panjang 67cm, P.Lengan 20cm<br>
+            L: Lebar Dada 50cm, Panjang 69cm, P.Lengan 21cm<br>
+            XL: Lebar Dada 52cm, Panjang 71cm, P.Lengan 22cm<br><br>
+
+            dan Warna:<br>
+            Hitam<br>
+            Biru Muda
+            `,
+        namaCheckout: 'Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium',
+    },
+
 ];
 
 const produk = data.find(item => item.namaProduk === produkTarget);
