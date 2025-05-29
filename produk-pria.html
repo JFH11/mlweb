@@ -5,12 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk - Pria</title>
+
+    <!-- icon -->
+     <link rel="icon" href="img/logo/logo_v2.png" type="image/png">
+
+    <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile_phone.css">
+
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- internal css -->
+    <style>
+        .container-button-url a:nth-child(2) {
+            background: var(--coklat-color);
+            color: var(--component-color);
+            border: none;
+            overflow: hidden;
+        }
+
+        .container-button-url a:nth-child(2)::before {
+            content: '';
+            position: absolute;
+            left: -5rem;
+            top: -1rem;
+            width: 1rem;
+            height: 4rem;
+            transform: rotate(-20deg);
+            background: rgba(255, 255, 255, 0.5);
+            animation: geser 1.5s ease-in infinite;
+        }
+
+        @keyframes geser {
+            0% {
+                left: -5rem;
+            }
+
+            100% {
+                left: 200%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +66,7 @@
             <a href="#home">
                 <i class="fa-solid fa-house"></i>
             </a>
-            <button>
+            <button class="btn-keranjang">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
 
@@ -41,40 +82,155 @@
 
             <div class="slider">
                 <div class="slides" id="slide-track">
-                    <div class="slide"><img src="img/banner/banner_0.webp"></div>
-                    <div class="slide"><img src="img/banner/banner_1.webp"></div>
-                    <div class="slide"><img src="img/banner/banner_2.webp"></div>
                     <div class="slide"><img src="img/banner/banner_3.webp"></div>
                 </div>
-                <div class="dots" id="dots"></div>
+                <div id="page=pakaian_pria"></div>
             </div>
 
         </section>
-        <section id="product" x-data="produk_pria">
+    
+        <!-- produk pria -->
+         <section id="product">
             <div class="title-product">Pilihan Terbaik Untukmu</div>
             <div class="container-button-url">
+                <a href="index.html#page=semua_pakaian" onclick="return showLoader(event)">Semua</a>
                 <a href="" onclick="return false">Pria</a>
-                <a href="produk-wanita.html#product" onclick="return showLoader(event)">Wanita</a>
-                <a href="index.html#product" onclick="return showLoader(event)">Semua</a>
+                <a href="produk-wanita.html#page=pakaian_wanita" onclick="return showLoader(event)">Wanita</a>
             </div>
 
             <div class="container-product">
-
-                <template x-for="product in produk_pria" :key="product.namaProduk">
                     <a 
-                    href="" 
+                    href="Wush Club 16S Boxy Fit Heavyweight Tee.html" 
                     class="product-card"
                     onclick="return showLoader(event)"
-                    :href="`detail_produk.html?produk=${encodeURIComponent(product.namaProduk)}`">
+                    >
                         <img 
                             class="product-image"
-                            :src="`img/product/${product.gambarProduk}`"
-                            :alt="product.namaProduk"
+                            src="img/product/Wush Club.webp"
+                            alt="wush_club"
                         >
-                        <div class="product-name" x-text="product.namaProduk"></div>
-                        <div class="product-price" x-text="product.hargaProduk"></div>
+                        <div class="product-name">Wush Club 16S Boxy Fit Heavyweight Tee</div>
+                        <div class="product-price">Rp 64.000</div>
                     </a>
-                </template>
+
+                    <a 
+                    href="Infinide T-Shirt Kaos Polos BIG OVERSIZE.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Infinide T-Shirt.webp"
+                            alt="infinite_t_shirt"
+                        >
+                        <div class="product-name">Infinide T-Shirt Kaos Polos BIG OVERSIZE</div>
+                        <div class="product-price">Rp 44.000</div>
+                    </a>
+
+                    <a 
+                    href="POLOS BOXY FIT OVERSIZE T SHIRT.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/POLOS BOXY FIT Sage.webp"
+                            alt="polos_boxy_fit"
+                        >
+                        <div class="product-name">POLOS BOXY FIT OVERSIZE T SHIRT</div>
+                        <div class="product-price">Rp 85.000</div>
+                    </a>
+
+                    <a 
+                    href="Okechuku SAM Celana Panjang Pria Loose Pants.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Okechuku SAM Krem.webp"
+                            alt="Okechuku"
+                        >
+                        <div class="product-name">Okechuku SAM Celana Panjang Pria Loose Pants</div>
+                        <div class="product-price">Rp 53.000</div>
+                    </a>
+
+                    <a 
+                    href="Madless Celana Pendek Pria Hitam | Shorts.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Madless Celana Pendek Hitam.webp"
+                            alt="Okechuku"
+                        >
+                        <div class="product-name">Madless Celana Pendek Pria Hitam</div>
+                        <div class="product-price">Rp 28.000</div>
+                    </a>
+
+                    <a 
+                    href="FortKlass Kaos SPORTY Regular Fit Kaos Sablon 24S 30S.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/FortKlass Kaos SPORTY Regular Fit Navy.webp"
+                            alt="Okechuku"
+                        >
+                        <div class="product-name">Forklass Kaos SPORTY Regular Fit</div>
+                        <div class="product-price">Rp 125.000</div>
+                    </a>
+
+                    <a 
+                    href="Roughneck H452 Black Aura Camouflage 1991.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Roughneck H452 Black Aura Camouflage 1991.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">Roughneck H452 Black Aura Camouflage 1991</div>
+                        <div class="product-price">Rp 97.000</div>
+                    </a>
+
+                    <a 
+                    href="MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Maruso Baju Distro Hitam.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">MARUSO Baju Distro Kemeja Lengan Panjang Kerah Basic Pria</div>
+                        <div class="product-price">Rp 32.000</div>
+                    </a>
+
+                    <a 
+                    href="Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/kemeja kerah sanghai Biru Muda.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium</div>
+                        <div class="product-price">Rp 72.000</div>
+                    </a>
+
+                    <a href="baju kemeja pria kantoran formal casual tbb206.html" class="product-card"
+                    onclick="return showLoader(event)">
+                    <img class="product-image" src="img/product/baju kemeja pria kantoran formal casual tbb206 putih.webp" alt="wush_club">
+                    <div class="product-name">baju kemeja pria kantoran formal casual tbb206</div>
+                    <div class="product-price">Rp 135.000</div>
+                </a>
 
             </div>
 
@@ -170,10 +326,11 @@
         </div>
     </div>
 
-    <div class="keranjang"></div>
+    <div class="container-keranjang">
+        <h3>keranjang belanja kosong</h3>
+    </div>
 
     <script src="js/index.js"></script>
-    <script src="js/app.js"></script>
 
 </body>
 

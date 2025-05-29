@@ -5,12 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produk Wanita</title>
+
+    <!-- icon -->
+     <link rel="icon" href="img/logo/logo_v2.png" type="image/png">
+
+    <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile_phone.css">
+
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- internal css -->
+    <style>
+        .container-button-url a:nth-child(3) {
+            background: var(--coklat-color);
+            color: var(--component-color);
+            border: none;
+            overflow: hidden;
+        }
+
+        .container-button-url a:nth-child(3)::before {
+            content: '';
+            position: absolute;
+            left: -5rem;
+            top: -1rem;
+            width: 1rem;
+            height: 4rem;
+            transform: rotate(-20deg);
+            background: rgba(255, 255, 255, 0.5);
+            animation: geser 1.5s ease-in infinite;
+        }
+
+        @keyframes geser {
+            0% {
+                left: -5rem;
+            }
+
+            100% {
+                left: 200%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -25,7 +66,7 @@
             <a href="#home">
                 <i class="fa-solid fa-house"></i>
             </a>
-            <button>
+            <button class="btn-keranjang">
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
 
@@ -41,40 +82,100 @@
 
             <div class="slider">
                 <div class="slides" id="slide-track">
-                    <div class="slide"><img src="img/banner/banner_0.webp"></div>
-                    <div class="slide"><img src="img/banner/banner_1.webp"></div>
-                    <div class="slide"><img src="img/banner/banner_2.webp"></div>
                     <div class="slide"><img src="img/banner/banner_3.webp"></div>
                 </div>
-                <div class="dots" id="dots"></div>
+                <div id="page=pakaian_wanita"></div>
             </div>
 
         </section>
-        <section id="product" x-data="produk_wanita">
+
+        <!-- produk wanita -->
+        <section id="product">
             <div class="title-product">Pilihan Terbaik Untukmu</div>
             <div class="container-button-url">
+                <a href="index.html#page=semua_pakaian" onclick="return showLoader(event)">Semua</a>
+                <a href="produk-pria.html#page=pakaian_pria" onclick="return showLoader(event)">Pria</a>
                 <a href="" onclick="return false">Wanita</a>
-                <a href="index.html#product" onclick="return showLoader(event)">Semua</a>
-                <a href="produk-pria.html#product" onclick="return showLoader(event)">Pria</a>
             </div>
 
             <div class="container-product">
 
-                <template x-for="product in produk_wanita" :key="product.namaProduk">
-                    <a 
-                    href="" 
+                <a 
+                    href="FortKlass Kaos SPORTY Regular Fit Kaos Sablon 24S 30S.html" 
                     class="product-card"
                     onclick="return showLoader(event)"
-                    :href="`detail_produk.html?produk=${encodeURIComponent(product.namaProduk)}`">
+                    >
                         <img 
                             class="product-image"
-                            :src="`img/product/${product.gambarProduk}`"
-                            :alt="product.namaProduk"
+                            src="img/product/FortKlass Kaos SPORTY Regular Fit Navy.webp"
+                            alt="Okechuku"
                         >
-                        <div class="product-name" x-text="product.namaProduk"></div>
-                        <div class="product-price" x-text="product.hargaProduk"></div>
+                        <div class="product-name">Forklass Kaos SPORTY Regular Fit</div>
+                        <div class="product-price">Rp 125.000</div>
                     </a>
-                </template>
+
+                    <a 
+                    href="Nathalie Short Pants Wanita Ice Silk.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Nathalie Short Pants Wanita Ice Silk Pink.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">Nathalie Short Pants Wanita Ice Silk</div>
+                        <div class="product-price">Rp 17.500</div>
+                    </a>
+
+                    <a 
+                    href="Kemeja Lengan Panjang Kerah Berdiri Sifon.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/Kemeja Lengan Panjang Kerah Berdiri Sifon.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">Kemeja Lengan Panjang Kerah Berdiri Sifon</div>
+                        <div class="product-price">Rp 35.000</div>
+                    </a>
+
+                    <a 
+                    href="setelan celana kulot kaos wanita.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/setelan celana kulot kaos wanita.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">Setelan Celana Kulot Kaos Wanita</div>
+                        <div class="product-price">Rp 142.000</div>
+                    </a>
+
+                    <a 
+                    href="long dress anissa pakaian wanita fashion wanita.html" 
+                    class="product-card"
+                    onclick="return showLoader(event)"
+                    >
+                        <img 
+                            class="product-image"
+                            src="img/product/long dress anissa Ungu.webp"
+                            alt="wush_club"
+                        >
+                        <div class="product-name">long dress anissa pakaian wanita fashion wanita</div>
+                        <div class="product-price">Rp 250.000</div>
+                    </a>
+
+                    <a href="HARA KEMEJA SALUR STRIPE OVERSIZE_ ATASAN WANITA.html" class="product-card"
+                    onclick="return showLoader(event)">
+                    <img class="product-image" src="img/product/HARA KEMEJA SALUR STRIPE OVERSIZE_ ATASAN WANITA dusty.webp" alt="wush_club">
+                    <div class="product-name">HARA KEMEJA SALUR STRIPE OVERSIZE_ ATASAN WANITA</div>
+                    <div class="product-price">Rp 56.000</div>
+                </a>
 
             </div>
 
@@ -170,10 +271,11 @@
         </div>
     </div>
 
-    <div class="keranjang"></div>
+    <div class="container-keranjang">
+        <h3>keranjang belanja kosong</h3>
+    </div>
 
     <script src="js/index.js"></script>
-    <script src="js/app.js"></script>
 
 </body>
 

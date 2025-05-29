@@ -5,9 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mendaftar Akun</title>
+    
+    <!-- icon -->
+    <link rel="icon" href="img/logo/logo_v2.png" type="image/png">
+
+    <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile_phone.css">
+
+    <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- internal css -->
     <style>
+        
         body {
             display: flex;
             align-items: center;
@@ -29,8 +45,8 @@
 
         .hdr-login-text {
             font-size: 1.5rem;
-            font-family: sans-serif;
             font-weight: 500;
+            font-family: sans-serif;
             color: var(--font-color);
         }
 
@@ -48,7 +64,6 @@
 
         .form-container h1 {
             font-size: 2rem;
-            font-family: sans-serif;
             font-weight: bold;
         }
 
@@ -98,7 +113,7 @@
             display: flex;
             align-items: center;
             font-family: sans-serif;
-            font-size: 0.7rem;
+            font-size: 11px;
             gap: 0.5rem;
             margin-bottom: 0.5rem;
         }
@@ -111,6 +126,7 @@
         }
 
         .checkbox-container a {
+            width: max-content;
             color: var(--coklat-color);
             text-decoration: none;
         }
@@ -154,39 +170,39 @@
         <div class="hdr-login-text">Daftar</div>
     </header>
 
-    <div class="form-container">
-        <h1>Daftar</h1>
-        <p>Silahkan daftar terlebih dahulu.</p>
-        <form action="" method="">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="Username" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <div class="password-container">
-                <div class="password-container2">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password" required>
+        <div class="form-container">
+            <h1>Daftar</h1>
+            <p>Silahkan daftar terlebih dahulu.</p>
+            <form action="" method="">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <div class="password-container">
+                    <div class="password-container2">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="password-container2">
+                        <label for="password2">Konfirmasi Password</label>
+                        <input type="password" name="password2" id="password2" placeholder="Konfirmasi Password" required>
+                    </div>
                 </div>
-                <div class="password-container2">
-                    <label for="password2">Konfirmasi Password</label>
-                    <input type="password" name="password2" id="password2" placeholder="Konfirmasi Password" required>
+    
+                <div class="checkbox-container">
+                    <input type="checkbox" name="checkbox" id="checkbox" required> Saya menyetujui
+                    <a href="" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
+                    dan
+                    <a href="" onclick="return showLoader(event)">Kebijakan Privasi</a>
                 </div>
-            </div>
-
-            <div class="checkbox-container">
-                <input type="checkbox" name="checkbox" id="checkbox" required> Saya menyetujui
-                <a href="" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
-                dan
-                <a href="" onclick="return showLoader(event)">Kebijakan Privasi</a>
-            </div>
-
-            <button type="submit" id="daftar-btn">Daftar</button>
-
-            <div class="have-account">Sudah punya akun?
-                <a href="masuk.html" onclick="return showLoader(event)">Masuk</a>
-            </div>
-        </form>
-    </div>
+    
+                <button type="submit" id="daftar-btn">Daftar</button>
+    
+                <div class="have-account">Sudah punya akun?
+                    <a href="masuk.html" onclick="return showLoader(event)">Masuk</a>
+                </div>
+            </form>
+        </div>
 
     <footer>
 
