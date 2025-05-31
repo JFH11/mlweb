@@ -18,43 +18,231 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
-    <style type="css">
-        p {
-         position: relative;
-         margin-left: 100px;
+    
+
+    <!-- internal css -->
+     <style>
+
+header {
+            justify-content: left;
+            padding: 0 2.5%;
+            overflow: hidden;
         }
-    </style>
+
+        .logo {
+            position: relative;
+            left: 0;
+            margin-right: 1rem;
+        }
+
+        .hdr-text {
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            font-weight: 500;
+            color: var(--font-color);
+        }
+
+        .about-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: var(--component-color);
+  font-family: sans-serif;
+  color: #333;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: var(--coklat-color);
+  margin-bottom: 10px;
+}
+
+.about-section p,
+.about-section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.highlight {
+  background-color: #fdf6f1;
+  border-left: 5px solid var(--coklat-color);
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.values-section .values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.value-box {
+  background-color: var(--coklat-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+     </style>
 </head>
 
 <body>
 
-    <p align="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vehicula fringilla mi, eu dignissim urna rutrum placerat. Aenean a elementum urna, ultricies volutpat tortor. Suspendisse potenti. Quisque rhoncus dignissim dui, sed rutrum urna ultricies quis. Vestibulum ac augue imperdiet, ornare ipsum id, cursus nulla. Sed nec mollis tortor. Maecenas porta massa lectus, eu tincidunt nisi iaculis at. Vivamus non porttitor arcu. Etiam pulvinar venenatis risus, quis rhoncus arcu tincidunt a. Proin dignissim aliquet lectus at facilisis. Fusce laoreet condimentum tortor, sit amet cursus massa fringilla nec. Fusce blandit, ex eu euismod varius, lorem tellus congue neque, convallis fermentum metus urna vel velit. Morbi ultricies scelerisque urna ut posuere.
-        <br>
-        <br>
-        Maecenas ultricies viverra mauris nec bibendum. Maecenas in pellentesque arcu, in maximus turpis. Proin rutrum, est nec condimentum convallis, felis nisl ornare nibh, non mollis ex tortor nec purus. Aenean placerat, ligula in malesuada posuere, magna dolor tincidunt elit, nec euismod ipsum ipsum eget eros. Nunc fringilla ipsum non posuere lacinia. Donec fringilla ex ac purus pellentesque consequat. Suspendisse velit tortor, congue id tempor et, dictum eget lacus. Suspendisse eget enim quis velit mattis ultrices. Cras pharetra bibendum tellus, ut egestas urna rhoncus ut.
-        <br>
-        <br>
-        Ut bibendum aliquet porttitor. Duis nibh quam, pretium vel consectetur eu, fringilla at elit. Duis finibus, nisl laoreet vestibulum mollis, leo erat mattis diam, sit amet pulvinar augue leo vel dui. Vestibulum cursus eu quam nec pulvinar. Curabitur egestas finibus est vel iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur diam ipsum, ultricies nec ligula nec, eleifend convallis tellus. Nulla convallis eget metus id facilisis. Aliquam congue diam eget tellus mattis suscipit. Nulla feugiat, felis in bibendum congue, neque felis mollis enim, porttitor mattis urna est ac arcu. Duis consectetur elementum lacus, sit amet cursus metus. Aenean maximus faucibus euismod. Mauris eget feugiat magna. Sed id posuere ligula, id facilisis enim.
-        <br>
-        <br>
-        Vestibulum luctus, odio non blandit accumsan, diam magna dapibus velit, non lobortis nisl lorem vel neque. Aenean id risus enim. Fusce turpis quam, varius a dictum eu, suscipit vitae sapien. Vivamus id purus a nisl convallis condimentum. Fusce at risus odio. Donec ultricies metus sit amet ipsum dictum sollicitudin. Vivamus nec dapibus dolor. Sed magna elit, tempus ultricies turpis sit amet, cursus eleifend mi. Sed risus arcu, dapibus a ante et, sodales commodo leo. Etiam nec elit turpis. Donec tempus purus et ullamcorper ultrices. Vestibulum in nisl magna. Nunc convallis risus vel justo convallis varius. Nullam ac dolor tristique, sodales justo eu, egestas purus.
-        <br>
-        <br>
-        Curabitur vel lacus eu nisl congue pharetra eu quis urna. Integer sed tortor diam. Curabitur eget ex suscipit, congue purus in, luctus nibh. Vivamus porta ultricies est, quis lobortis ligula ullamcorper eu. Mauris eu justo ut tellus dignissim consectetur eu ut orci. Aliquam at turpis sapien. Vivamus hendrerit aliquam bibendum. In congue maximus risus, eu rhoncus risus ultrices eu. Sed placerat sed elit eu feugiat. Mauris ullamcorper, libero in tempus mollis, magna enim rutrum magna, et laoreet metus nisl efficitur metus. Praesent pretium molestie nisi, ut commodo velit sagittis a. Curabitur quis consectetur urna.
-        <br>
-        <br>
-        Sed efficitur tempus volutpat. Ut vulputate massa ante, in aliquam orci vestibulum vitae. Donec faucibus egestas metus, placerat tincidunt metus. Nulla sagittis lacus et leo suscipit porttitor. Sed consectetur mi libero, ac imperdiet nisi scelerisque ut. Donec nec sapien dolor. Donec eu lorem nulla. Quisque in venenatis lectus. Vestibulum viverra tellus nunc, in aliquam felis scelerisque et. Integer at libero turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed efficitur, velit eu gravida pretium, diam dolor imperdiet magna, eget viverra diam ante quis sem. Nam vestibulum nisi id nisl viverra ultrices. Nam eu lectus diam. Phasellus finibus dictum mauris. Nam eu lorem lectus.
-        <br>
-        <br>
-        In tincidunt arcu vel elit imperdiet feugiat. Phasellus at lectus ut nisi cursus tincidunt a vestibulum odio. Nam et velit nec orci cursus dictum eu at sapien. Praesent nec condimentum nulla, sit amet placerat metus. Nullam eget lacus lorem. Etiam eu arcu nec ligula tincidunt lacinia. Proin interdum, justo a faucibus convallis, odio augue consequat metus, vitae mattis ex sapien et sem. Nullam tellus odio, luctus id aliquet at, fringilla vel turpis. Mauris id metus varius, pellentesque diam id, consequat ligula. Vivamus porta odio felis, et sodales sapien cursus eu. Sed ornare nisl at est scelerisque, vel posuere enim maximus. Morbi rhoncus euismod porta. Cras hendrerit ultrices orci sed commodo. Praesent sed commodo libero.
-        <br>
-        <br>
-        Donec aliquam lorem at ultrices auctor. Cras libero massa, mollis vel diam sed, dictum sodales metus. Morbi a metus sed diam placerat ornare. Ut et lorem vehicula, euismod est vel, dignissim erat. Vestibulum erat felis, molestie sagittis odio eu, placerat rhoncus ante. Integer laoreet purus nec ligula dapibus, id fringilla ipsum placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc tristique felis bibendum ante finibus, ac semper ante porttitor. Sed tincidunt blandit ligula, ut efficitur arcu porta eget. Vivamus euismod eros in libero commodo sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet posuere leo.
-        <br>
-        <br>
-        Donec rutrum, eros eget commodo facilisis, nulla elit euismod quam, in aliquam tellus elit eu tellus. Donec pellentesque eros in diam tempor efficitur. Curabitur in sollicitudin metus, ut interdum ante. Nulla porta maximus massa et viverra. Nunc varius viverra urna, eget lobortis mauris pharetra in. Pellentesque mollis augue ligula, non dictum quam rutrum vitae. Nam pellentesque efficitur sapien sit amet varius. Curabitur sit amet semper libero. Etiam consectetur, mauris eu rutrum dictum, nibh erat lacinia elit, quis dapibus purus lectus in lectus. In ullamcorper velit vel erat lacinia posuere. Nunc finibus orci arcu, ac aliquam sem dignissim eget. Praesent eget nunc lacinia lacus dignissim fermentum vitae ut nunc. Integer a massa et urna tristique dapibus. Sed congue porta neque.
-        <br>
-        <br>
-        Sed tincidunt neque sed erat auctor, vel molestie enim tempus. Curabitur facilisis ornare arcu vitae tincidunt. Nunc dui leo, facilisis in lorem quis, vestibulum aliquam ipsum. Phasellus nunc ante, blandit quis augue vitae, placerat rhoncus sapien. Donec lacinia suscipit sapien consectetur pharetra. Nunc sed dui vitae ligula accumsan scelerisque sit amet sed ex. Nulla cursus est sed tempus posuere. Donec ornare lorem sit amet mi blandit, non pharetra nisi dapibus. Pellentesque tincidunt elementum sapien id commodo. Curabitur eget viverra nunc.</p>
+    <header>
+        <img class="logo" src="img/logo/logo.webp"></img>
+        <div class="hdr-text">Tentang Kami</div>
+</header>
+
+    <main class="about-container">
+  <section class="about-section">
+    <h2>Siapa Kami?</h2>
+    <p>
+      Kami adalah brand lokal yang berkomitmen menyediakan produk fashion berkualitas tinggi, bergaya modern, dan tetap nyaman digunakan sehari-hari. Dengan perpaduan desain kontemporer dan bahan terbaik, kami hadir untuk memenuhi kebutuhan gaya hidup Anda.
+    </p>
+  </section>
+
+  <section class="about-section highlight">
+    <h2>Visi Kami</h2>
+    <p>
+      Menjadi merek fashion lokal terpercaya dan inovatif yang mampu bersaing di pasar global tanpa melupakan akar budaya Indonesia.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>Misi Kami</h2>
+    <ul>
+      <li>Menghadirkan produk berkualitas dengan harga terjangkau.</li>
+      <li>Mendukung komunitas lokal dan produksi berkelanjutan.</li>
+      <li>Memberikan pelayanan terbaik kepada seluruh pelanggan.</li>
+    </ul>
+  </section>
+
+  <section class="about-section values-section">
+    <h2>Nilai-Nilai Kami</h2>
+    <div class="values">
+      <div class="value-box">Kejujuran</div>
+      <div class="value-box">Inovasi</div>
+      <div class="value-box">Kualitas</div>
+      <div class="value-box">Kepuasan Pelanggan</div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Logo</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="about.html" onclick="return showLoader(event)">Tentang Kami</a>
+                    <a href="kebijakan-privasi.html" onclick="return showLoader(event)">Kebijakan Privasi</a>
+                    <a href="syarat-ketentuan.html" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Layanan Pelanggan</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="bantuan.html" onclick="return showLoader(event)">Bantuan</a>
+                    <a href="pembelian-pembayaran.html" onclick="return showLoader(event)">Cara Pembelian & Pembayaran</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Daftar & Login</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="daftar.html" onclick="return showLoader(event)">Daftar</a>
+                    <a href="masuk.html" onclick="return showLoader(event)">Login</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kategori Produk</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="index.html" onclick="return showLoader(event)">Semua Produk</a>
+                    <a href="produk-pria.html" onclick="return showLoader(event)">Pria</a>
+                    <a href="produk-wanita.html" onclick="return showLoader(event)">Wanita</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kontak Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="mailto:fashvibe@gmail.com">Email</a>
+                    <a href="https://wa.me/628123456789">Telepon</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Ikuti Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-medsos">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Metode Pembayaran</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <div class="ftr-link-2">
+                        <img src="img/payment/gopay.png" alt="">
+                        <img src="img/payment/dana.png" alt="">
+                        <img src="img/payment/ovo.png" alt="">
+                        <img src="img/payment/bank.png" alt="">
+                        <img src="img/payment/bca.png" alt="">
+                        <img src="img/payment/paypal.png" alt="">
+                        <img src="img/payment/seabank.png" alt="">
+                        <img src="img/payment/qris.png" alt="">
+                        <img src="img/payment/linkaja.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
+        </footer>
+
+        <div class="container-loader" id="container-loader">
+        <div class="loading">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+        <script>
+            function showLoader(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  let loader = document.getElementById("container-loader");
+  loader.style.display = "grid";
+
+  let targetUrl = event.currentTarget.href;
+
+  setTimeout(function () {
+    window.location.href = targetUrl;
+  }, 700);
+}
+        </script>
+
 </body>
 </html>

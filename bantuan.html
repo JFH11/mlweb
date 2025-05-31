@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bantuan</title>
+
+  <!-- icon -->
+  <link rel="icon" href="img/logo/logo_v2.png" type="image/png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/mobile_phone.css">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- internal style -->
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      justify-content: left;
+      padding: 0 2.5%;
+      overflow: hidden;
+    }
+
+    .logo {
+      position: relative;
+      left: 0;
+      margin-right: 1rem;
+    }
+
+    .hdr-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-family: sans-serif;
+      color: var(--font-color);
+    }
+
+    .con-kebijakan {
+      position: relative;
+      width: 100%;
+      height: max-content;
+      padding: 2rem 4% 0 4%;
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    .con-kebijakan-1 {
+      position: sticky;
+      top: 80px;
+      width: 25%;
+      height: max-content;
+      padding: 15px 25px;
+      background: var(--component-color);
+      border: 1px solid var(--coklat-color);
+      border-radius: 5px;
+      font-size: 0.9rem;
+      color: var(--font-color);
+    }
+
+    .con-kebijakan-1 h2 {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: var(--coklat-color);
+      margin-bottom: 1rem;
+    }
+
+    .con-kebijakan-1 ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .con-kebijakan-1 ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .con-kebijakan-1 ul li a {
+      font-size: 0.9rem;
+      color: var(--font-color);
+      text-decoration: none;
+    }
+
+    .con-kebijakan-1 ul li a:hover {
+      border-bottom: 1px solid var(--font-color);
+    }
+
+    .con-kebijakan-2 {
+      position: relative;
+      width: 65%;
+      height: max-content;
+      padding: 15px 25px;
+      background: var(--component-color);
+      font-size: 0.9rem;
+      color: var(--font-color);
+    }
+
+    .con-kebijakan-2 h3 {
+      font-size: 1rem;
+      font-family: sans-serif;
+      color: var(--coklat-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .con-kebijakan-2 p,
+    .con-kebijakan-2 ul {
+      font-size: 0.9rem;
+      color: var(--font-color);
+    }
+
+    .con-kebijakan-2 ul {
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .con-kebijakan-2-child {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img class="logo" src="img/logo/logo.webp" alt="Logo">
+  <div class="hdr-text">Bantuan</div>
+</header>
+
+<div class="con-kebijakan">
+  <div class="con-kebijakan-1">
+    <h2>Topik Bantuan</h2>
+    <ul>
+      <li><a href="#akun">1. Masalah Akun</a></li>
+      <li><a href="#pesanan">2. Status Pesanan</a></li>
+      <li><a href="#pengembalian">3. Pengembalian Barang</a></li>
+      <li><a href="#kontak">4. Kontak Bantuan</a></li>
+    </ul>
+  </div>
+
+  <div class="con-kebijakan-2">
+
+    <div class="con-kebijakan-2-child" id="akun">
+      <h3>1. Masalah Akun</h3>
+      <p>Jika Anda mengalami kendala saat masuk ke akun:</p>
+      <ul>
+        <li>Pastikan email dan kata sandi benar.</li>
+        <li>Gunakan fitur "Lupa Password" untuk mereset kata sandi Anda.</li>
+        <li>Jika masih bermasalah, hubungi kami melalui email atau WhatsApp.</li>
+      </ul>
+    </div>
+
+    <div class="con-kebijakan-2-child" id="pesanan">
+      <h3>2. Status Pesanan</h3>
+      <p>Anda dapat memeriksa status pesanan Anda dengan cara berikut:</p>
+      <ul>
+        <li>Masuk ke akun Anda dan buka menu “Pesanan Saya”.</li>
+        <li>Periksa nomor resi untuk melacak pengiriman.</li>
+        <li>Jika tidak ada update dalam 2 hari kerja, silakan hubungi kami.</li>
+      </ul>
+    </div>
+
+    <div class="con-kebijakan-2-child" id="pengembalian">
+      <h3>3. Pengembalian Barang</h3>
+      <p>Kami menerima pengembalian dengan ketentuan berikut:</p>
+      <ul>
+        <li>Barang belum dipakai dan masih dalam kondisi asli.</li>
+        <li>Permintaan dikirim dalam 7 hari sejak barang diterima.</li>
+        <li>Biaya pengiriman ditanggung oleh pembeli kecuali produk cacat.</li>
+      </ul>
+    </div>
+
+    <div class="con-kebijakan-2-child" id="kontak">
+      <h3>4. Kontak Bantuan</h3>
+      <p>Hubungi kami melalui:</p>
+      <ul>
+        <li>Email: <a href="mailto:fashvibe@gmail.com">fashvibe@gmail.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/628123456789">0812-3456-789</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Logo</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="about.html" onclick="return showLoader(event)">Tentang Kami</a>
+                    <a href="kebijakan-privasi.html" onclick="return showLoader(event)">Kebijakan Privasi</a>
+                    <a href="syarat-ketentuan.html" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Layanan Pelanggan</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="bantuan.html" onclick="return showLoader(event)">Bantuan</a>
+                    <a href="pembelian-pembayaran.html" onclick="return showLoader(event)">Cara Pembelian & Pembayaran</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Daftar & Login</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="daftar.html" onclick="return showLoader(event)">Daftar</a>
+                    <a href="masuk.html" onclick="return showLoader(event)">Login</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kategori Produk</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="index.html" onclick="return showLoader(event)">Semua Produk</a>
+                    <a href="produk-pria.html" onclick="return showLoader(event)">Pria</a>
+                    <a href="produk-wanita.html" onclick="return showLoader(event)">Wanita</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kontak Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="mailto:fashvibe@gmail.com">Email</a>
+                    <a href="https://wa.me/628123456789">Telepon</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Ikuti Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-medsos">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Metode Pembayaran</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <div class="ftr-link-2">
+                        <img src="img/payment/gopay.png" alt="">
+                        <img src="img/payment/dana.png" alt="">
+                        <img src="img/payment/ovo.png" alt="">
+                        <img src="img/payment/bank.png" alt="">
+                        <img src="img/payment/bca.png" alt="">
+                        <img src="img/payment/paypal.png" alt="">
+                        <img src="img/payment/seabank.png" alt="">
+                        <img src="img/payment/qris.png" alt="">
+                        <img src="img/payment/linkaja.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
+        </footer>
+
+        <div class="container-loader" id="container-loader">
+        <div class="loading">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+        </div>
+    </div>
+
+        <script>
+            function showLoader(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  let loader = document.getElementById("container-loader");
+  loader.style.display = "grid";
+
+  let targetUrl = event.currentTarget.href;
+
+  setTimeout(function () {
+    window.location.href = targetUrl;
+  }, 700);
+}
+        </script>
+</body>
+</html>

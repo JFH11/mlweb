@@ -28,7 +28,8 @@
 
         header {
             justify-content: left;
-            padding: 1rem 2.5%;
+            padding: 0 2.5%;
+            overflow: hidden;
         }
 
         .logo {
@@ -39,8 +40,8 @@
 
         .hdr-text {
             font-size: 1.5rem;
-            font-family: sans-serif;
             font-weight: 500;
+            font-family: sans-serif;
             color: var(--font-color);
         }
         
@@ -52,6 +53,7 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
+    margin-bottom: 2rem;
 }
 
 .con-kebijakan-1 {
@@ -61,6 +63,10 @@
     height: max-content;
     padding: 15px 25px;
     background: var(--component-color);
+    border: 1px solid var(--coklat-color);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: var(--font-color);
 }
 
 .con-kebijakan-1 h2 {
@@ -202,6 +208,107 @@
   </div>
 </div>
 
+<footer>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Logo</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="about.html" onclick="return showLoader(event)">Tentang Kami</a>
+                    <a href="kebijakan-privasi.html" onclick="return showLoader(event)">Kebijakan Privasi</a>
+                    <a href="syarat-ketentuan.html" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Layanan Pelanggan</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="bantuan.html" onclick="return showLoader(event)">Bantuan</a>
+                    <a href="pembelian-pembayaran.html" onclick="return showLoader(event)">Cara Pembelian & Pembayaran</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Daftar & Login</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="daftar.html" onclick="return showLoader(event)">Daftar</a>
+                    <a href="masuk.html" onclick="return showLoader(event)">Login</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kategori Produk</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="produk-pria.html" onclick="return showLoader(event)">Pria</a>
+                    <a href="produk-wanita.html" onclick="return showLoader(event)">Wanita</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kontak Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="mailto:fashvibe@gmail.com">Email</a>
+                    <a href="https://wa.me/628123456789">Telepon</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Ikuti Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-medsos">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Metode Pembayaran</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <div class="ftr-link-2">
+                        <img src="img/payment/gopay.png" alt="">
+                        <img src="img/payment/dana.png" alt="">
+                        <img src="img/payment/ovo.png" alt="">
+                        <img src="img/payment/bank.png" alt="">
+                        <img src="img/payment/bca.png" alt="">
+                        <img src="img/payment/paypal.png" alt="">
+                        <img src="img/payment/seabank.png" alt="">
+                        <img src="img/payment/qris.png" alt="">
+                        <img src="img/payment/linkaja.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
+        </footer>
+
+        <div class="container-loader" id="container-loader">
+        <div class="loading">
+            <span class="loader"></span>
+            <span class="loader"></span>
+            <span class="loader"></span>
+        </div>
+
+        <script>
+          function showLoader(event) {
+  event.preventDefault();
+  event.stopPropagation();
+  let loader = document.getElementById("container-loader");
+  loader.style.display = "grid";
+
+  let targetUrl = event.currentTarget.href;
+
+  setTimeout(function () {
+    window.location.href = targetUrl;
+  }, 700);
+}
+        </script>
 
 </body>
 </html>
