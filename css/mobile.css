@@ -1,0 +1,62 @@
+@media screen and (max-width: 468px) {
+    .container-search-bar {
+        display: none;
+    }
+
+    .nav-hr {
+        display: none;
+    }
+
+    .daftar-btn, .masuk-btn, .home-btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .slider {
+        height: 200px;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        place-items: center;
+    }
+
+    .ftr-container {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width: 1024px) {
+
+    .container-search-bar {
+        display: none;
+    }
+
+    .nav-hr {
+        display: none;
+    }
+
+    .daftar-btn, .masuk-btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .container-product {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        place-items: center;
+    }
+
+    .ftr-container {
+        width: 31%;
+    }
+}

@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    position: relative;
+    position: sticky;
     z-index: 100;
     top: 0;
     width: 100%;
@@ -333,7 +333,7 @@ footer {
     position: relative;
     width: 100%;
     height: max-content;
-    padding: 2rem 0 0 4%;
+    padding: 2rem 4% 0 4%;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -352,7 +352,7 @@ footer {
 }
 
 .ftr-title {
-    width: 300px;
+    width: 230px;
     font-size: 1rem;
     font-family: sans-serif;
     font-weight: bold;
@@ -883,4 +883,52 @@ footer {
 .beli:hover {
     background: #9e7e57;
     color: var(--component-color);
+}
+
+/* menu dan sidebar */
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-container {
+    position: fixed;
+    bottom: -300px;
+    width: 100%;
+    height: max-content;
+    background: var(--component-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem 2rem 0 0;
+    z-index: 1;
+    transition: 0.2s ease-in;
+}
+
+.menu-container a {
+    text-decoration: none;
+    color: var(--coklat-color);
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu-container a:hover {
+    background: var(--coklat-color);
+    color: var(--component-color);
+}
+
+.menu-container .daftar-btn {
+    background: var(--coklat-color);
+    color: var(--component-color);
+}
+
+.menu-container .daftar-btn:hover {
+    background: #b99467;
 }

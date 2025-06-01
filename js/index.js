@@ -21,3 +21,12 @@ keranjangBtn.addEventListener("click", () => {
   keranjang.style.transform = munculKeranjang ? 'scale(1)' : 'scale(0)';
 });
 
+const menu = document.querySelector('.menu');
+const menuContainer = document.querySelector('.menu-container');
+let menuMuncul = false;
+
+menu.addEventListener('click', () => {
+  menuMuncul = !menuMuncul;
+  menuContainer.style.bottom = menuMuncul ? '0' : '-300px';
+});
+

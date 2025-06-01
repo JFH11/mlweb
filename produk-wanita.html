@@ -11,7 +11,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile_phone.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -63,7 +63,7 @@
             <input type="text" placeholder="Cari disini">
         </div>
         <nav>
-            <a href="#home">
+            <a class="home-btn" href="#home">
                 <i class="fa-solid fa-house"></i>
             </a>
             <button class="btn-keranjang">
@@ -74,6 +74,10 @@
 
             <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)">Login</a>
             <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)">Daftar</a>
+
+            <button type="button" class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -294,6 +298,14 @@
 
     <div class="container-keranjang">
         <h3>keranjang belanja kosong</h3>
+    </div>
+
+    <div class="menu-container">
+        <a href="index.html" onclick="return showLoader(event)"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="produk-pria.html" onclick="return showLoader(event)"><i class="fa-solid fa-shirt"></i> Pria</a>
+        <a href="produk-wanita.html" onclick="return showLoader(event)"><i class="fa-solid fa-shirt"></i> Wanita</a>
+        <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)"><i class="fa-solid fa-user"></i> Masuk</a>
+        <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)"><i class="fa-solid fa-user-plus"></i> Daftar</a>
     </div>
 
     <script src="js/index.js"></script>
