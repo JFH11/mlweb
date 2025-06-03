@@ -11,7 +11,6 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile_phone.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -353,7 +352,20 @@
     </div>
 
 
-    <script src="js/daftar.js"></script>
+    <script>
+            function showLoader(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      let loader = document.getElementById("container-loader");
+      loader.style.display = "grid";
+  
+      let targetUrl = event.currentTarget.href;
+  
+      setTimeout(function () {
+          window.location.href = targetUrl;
+      }, 700);
+  }
+    </script>
 </body>
 
 </html>

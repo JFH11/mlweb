@@ -27,6 +27,7 @@
     .ftr-container {
         width: 45%;
     }
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {

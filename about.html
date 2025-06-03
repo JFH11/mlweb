@@ -40,7 +40,7 @@ header {
           position: relative;
           display: flex;
           width: 100%;
-          height: 77vh;
+          height: 85vh;
           gap: 5rem;
           padding: 2rem 4rem;
         }
@@ -48,6 +48,18 @@ header {
         .about-child-1 {
           width: 50%;
           height: max-content;
+          animation: FadeInRight 1s ease-in-out;
+        }
+
+        @keyframes FadeInRight {
+          from {
+            opacity: 0;
+            transform: translateX(-100px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
         }
 
         .about-child-1 h1 {
@@ -269,6 +281,7 @@ Bagi kami, pelanggan bukan sekadar pembeli,tapi bagian dari perjalanan kami memb
   setTimeout(function () {
     window.location.href = targetUrl;
   }, 700);
+
 }
         </script>
 

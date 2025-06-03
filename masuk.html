@@ -373,7 +373,20 @@
             <div class="copyright">&copy; Copyright FashVibe 2025. All rights reserved</div>
         </footer>
 
-    <script src="js/masuk.js"></script>
+   <script>
+        function showLoader(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      let loader = document.getElementById("container-loader");
+      loader.style.display = "grid";
+  
+      let targetUrl = event.currentTarget.href;
+  
+      setTimeout(function () {
+          window.location.href = targetUrl;
+      }, 700);
+  }
+   </script>
 </body>
 
 </html>
