@@ -35,65 +35,90 @@ header {
             margin-right: 1rem;
         }
 
-        .hdr-text {
-            font-size: 1.5rem;
-            font-family: sans-serif;
-            font-weight: 500;
-            color: var(--font-color);
+        /* container about */
+        .about-container {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 77vh;
+          gap: 5rem;
+          padding: 2rem 4rem;
         }
 
-        .about-container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-  background: var(--component-color);
-  font-family: sans-serif;
-  color: #333;
-}
+        .about-child-1 {
+          width: 50%;
+          height: max-content;
+        }
 
-.about-section {
-  margin-bottom: 40px;
-}
+        .about-child-1 h1 {
+          font-size: 2rem;
+          font-family: 'Poppins', sans-serif;
+          margin-bottom: 0.5rem;
+        }
 
-.about-section h2 {
-  font-size: 1.8rem;
-  color: var(--coklat-color);
-  margin-bottom: 10px;
-}
+        .about-child-1 p {
+          font-size: 1.1rem;
+          font-family: sans-serif;
+          margin-bottom: 2rem;
+        }
 
-.about-section p,
-.about-section li {
-  font-size: 1rem;
-  line-height: 1.6;
-}
+        .about-child-1 a {
+          padding: 0.8rem 1rem;
+          width: max-content;
+          border: 2px solid var(--coklat-color);
+          border-radius: 0.5rem;
+          background: none;
+          color: var(--coklat-color);
+          text-decoration: none;
+          font-size: 1rem;
+          font-family: sans-serif;
+          cursor: pointer;
+        }
 
-.about-section ul {
-  padding-left: 20px;
-  margin-top: 10px;
-}
+        .about-child-1 a:hover {
+          background: var(--coklat-color);
+          color: var(--component-color);
+        }
 
-.highlight {
-  background-color: #fdf6f1;
-  border-left: 5px solid var(--coklat-color);
-  padding: 20px;
-  border-radius: 6px;
-}
+        .about-child-2 {
+          width: 50%;
+          height: max-content;
+        }
 
-.values-section .values {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 15px;
-}
+        .about-child-2 img {
+          width: 100%;
+          height: 100%;
+          border-radius: 1rem;
+        }
 
-.value-box {
-  background-color: var(--coklat-color);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
+        .information {
+          position: relative;
+          width: 100%;
+          height: max-content;
+          padding: 1rem 4rem;
+          display: flex;
+          justify-content: left;
+          gap: 1rem;
+        }
+
+        .information-card {
+          width: 300px;
+          height: 150px;
+          padding: 1rem;
+          background: var(--coklat-color);
+          color: var(--component-color);
+          font-family: sans-serif;
+          border-radius: 0.5rem;
+        }
+
+        .information-card h1 {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .information-card p {
+          font-size: 1rem;
+        }
      </style>
 </head>
 
@@ -101,44 +126,47 @@ header {
 
     <header>
         <img class="logo" src="img/logo/logo.webp"></img>
-        <div class="hdr-text">Tentang Kami</div>
 </header>
 
-    <main class="about-container">
-  <section class="about-section">
-    <h2>Siapa Kami?</h2>
-    <p>
-      Kami adalah brand lokal yang berkomitmen menyediakan produk fashion berkualitas tinggi, bergaya modern, dan tetap nyaman digunakan sehari-hari. Dengan perpaduan desain kontemporer dan bahan terbaik, kami hadir untuk memenuhi kebutuhan gaya hidup Anda.
-    </p>
-  </section>
+  <div class="about-container">
 
-  <section class="about-section highlight">
-    <h2>Visi Kami</h2>
-    <p>
-      Menjadi merek fashion lokal terpercaya dan inovatif yang mampu bersaing di pasar global tanpa melupakan akar budaya Indonesia.
-    </p>
-  </section>
+    <div class="about-child-1">
+      <h1>Tentang Kami</h1>
+      <p><strong>Fashvibe</strong> hadir sebagai solusi bagi kamu yang ingin tampil stylish tanpa ribet. Kami percaya bahwa fashion bukan sekadar soal tren, tapi juga tentang bagaimana kamu mengekspresikan diri dengan nyaman dan percaya diri.
 
-  <section class="about-section">
-    <h2>Misi Kami</h2>
-    <ul>
-      <li>Menghadirkan produk berkualitas dengan harga terjangkau.</li>
-      <li>Mendukung komunitas lokal dan produksi berkelanjutan.</li>
-      <li>Memberikan pelayanan terbaik kepada seluruh pelanggan.</li>
-    </ul>
-  </section>
+Dari pakaian kasual hingga outfit yang lebih formal, kami selalu berusaha menyajikan pilihan terbaik yang mengikuti perkembangan zaman dengan kualitas yang terjaga dan harga yang masuk akal.
 
-  <section class="about-section values-section">
-    <h2>Nilai-Nilai Kami</h2>
-    <div class="values">
-      <div class="value-box">Kejujuran</div>
-      <div class="value-box">Inovasi</div>
-      <div class="value-box">Kualitas</div>
-      <div class="value-box">Kepuasan Pelanggan</div>
+Kami juga paham bahwa belanja online harus praktis dan aman. Karena itu, kami terus memperbaiki layanan kami, mulai dari tampilan website yang mudah digunakan, hingga sistem pembayaran dan pengiriman yang cepat dan terpercaya.
+
+Bagi kami, pelanggan bukan sekadar pembeli,tapi bagian dari perjalanan kami membangun gaya hidup yang lebih berani, modern, dan relevan.
+<br><br>
+<strong>Fashvibe</strong>. Gaya kamu, vibe kamu.</p>
+      <a href="index.html#page=semua_pakaian">Belanja Sekarang</a>
     </div>
-  </section>
 
-  </main>
+    <div class="about-child-2">
+      <img src="img/logo/logo.webp" alt="">
+    </div>
+  </div>
+
+  <div class="information">
+    <div class="information-card">
+      <h1><i class="fa-solid fa-phone"></i> Kontak Kami</h1>
+      <p>+62 123-456-789</p>
+      <p>fashvibe@gmail.com</p>
+    </div>
+    <div class="information-card">
+      <h1><i class="fa-solid fa-location-dot"></i> Alamat Kami</h1>
+      <p>Jl. Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12640</p>
+    </div>
+    <div class="information-card">
+      <h1><i class="fa-solid fa-clock"></i> Jam Kerja</h1>
+      <p>Senin - Jumat: 09:00 - 18:00<br>
+        Sabtu: 09:00 - 15:00<br>
+        Minggu: Tutup
+      </p>
+    </div>
+  </div>
 
   <footer>
 
@@ -218,7 +246,7 @@ header {
                 </div>
             </div>
 
-            <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
+            <div class="copyright">&copy; Copyright FashVibe 2025. All rights reserved</div>
         </footer>
 
         <div class="container-loader" id="container-loader">

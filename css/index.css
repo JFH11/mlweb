@@ -13,7 +13,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: all 0.1s;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -279,6 +278,10 @@ main {
     text-decoration: none;
 }
 
+.product-card:hover {
+    transform: scale(0.95);
+}
+
 .product-image {
     width: 100%;
     height: 175px;
@@ -289,6 +292,7 @@ main {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-family: sans-serif;
+    text-transform: capitalize;
 }
 
 .product-price {
@@ -353,7 +357,7 @@ footer {
 
 .ftr-title {
     width: 230px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: sans-serif;
     font-weight: bold;
     margin-bottom: 0.2rem;
@@ -375,7 +379,7 @@ footer {
 
 .ftr-link-container a {
     position: relative;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: sans-serif;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
@@ -494,13 +498,13 @@ footer {
 /* btn utk munculin keranjang */
 .container-keranjang {
     position: fixed;
-    top: 100px;
-    right: 100px;
-    width: 300px;
+    top: 120px;
+    width: 550px;
     height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
     background: var(--component-color);

@@ -25,9 +25,6 @@
     <style>
         
         body {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
             background: var(--coklat-color);
         }
 
@@ -50,27 +47,75 @@
             color: var(--font-color);
         }
 
+        .bantuan-btn {
+            position: absolute;
+            right: 2.5%;
+            font-size: 0.8rem;
+            color: var(--coklat-color);
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+        }
+        
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 200px;
+        }
+
+        .img-container {
+            width: 400px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .img-container p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            font-family: sans-serif;
+            color: var(--component-color);
+            margin: 1rem 0 1rem 0;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: auto;
+        }
+
         .form-container {
             position: relative;
             width: 400px;
             height: auto;
-            padding: 1rem;
+            padding: 2rem;
             display: flex;
             flex-direction: column;
             color: var(--font-color);
             background: var(--component-color);
-            margin: 2rem 0 2rem 0;
+            margin: 4rem 0 4rem 0;
+            border-radius: 2px;
+            animation: fadeDownLeft 1s ease-in-out;
+        }
+
+        @keyframes fadeDownLeft {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         .form-container h1 {
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .form-container p {
-            font-size: 1rem;
+            font-size: 1.5rem;
+            font-weight: 500;
             font-family: sans-serif;
             margin-bottom: 1rem;
+            letter-spacing: 0.05rem;
         }
 
         .form-container form {
@@ -78,57 +123,14 @@
             flex-direction: column;
         }
 
-        .form-container form label {
-            font-size: 0.9rem;
-            font-family: sans-serif;
-            margin-bottom: 0.1rem;
-        }
-
-        #username,
-        #email,
-        #password,
-        #password2 {
+        .nomor-telepon {
             width: 100%;
-            height: 2rem;
-            border: 1px solid rgba(167, 167, 167, 0.582);
-            padding: 0.5rem;
-            margin-bottom: 0.5rem;
+            height: 2.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.384);
+            border-radius: 2px;
             outline: none;
-        }
-
-        #username:focus,
-        #email:focus,
-        #password:focus,
-        #password2:focus {
-            border-color: var(--coklat-color);
-            box-shadow: 0 0 5px var(--coklat-color);
-        }
-
-        .password-container {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .checkbox-container {
-            display: flex;
-            align-items: center;
-            font-family: sans-serif;
-            font-size: 11px;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        input[type="checkbox"] {
-            accent-color: var(--coklat-color);
-            width: 1rem;
-            height: 1rem;
-            cursor: pointer;
-        }
-
-        .checkbox-container a {
-            width: max-content;
-            color: var(--coklat-color);
-            text-decoration: none;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         #daftar-btn {
@@ -141,7 +143,7 @@
             font-size: 1rem;
             font-family: sans-serif;
             cursor: pointer;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         #daftar-btn:hover {
@@ -153,12 +155,60 @@
             font-size: 0.8rem;
             font-family: sans-serif;
             text-align: center;
-            margin-bottom: 1rem;
         }
 
         .have-account a {
             color: var(--coklat-color);
             text-decoration: none;
+        }
+
+        .con-other {
+            width: 100%;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+
+        .other-child {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.75rem;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            color: rgba(117, 117, 117, 0.596);
+            margin-bottom: 1rem;
+        }
+
+        .other-child hr {
+            width: 100%;
+            height: 1px;
+            background: var(--primary-color);
+            border-color: var(--primary-color)
+        }
+
+        .con-other a {
+            padding: 0.5rem 0;
+            width: 100%;
+            text-decoration: none;
+            border: 1px solid rgba(0, 0, 0, 0.384);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 0.7rem;
+            color: black;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .con-other a img {
+            width: 1.5rem;
+            height: 1.5rem;
         }
     </style>
 </head>
@@ -168,122 +218,131 @@
     <header>
         <img class="logo" src="img/logo/logo.webp"></img>
         <div class="hdr-login-text">Daftar</div>
+        <a href="bantuan.html" class="bantuan-btn">Butuh Bantuan?</a>
     </header>
+
+    <div class="main">
+
+        <div class="img-container">
+            <p>Belanja di</p>
+            <img src="img/logo/logo_v3.webp" alt="">
+            <p>Berbagai pakaian dengan harga terbaik</p>
+        </div>
 
         <div class="form-container">
             <h1>Daftar</h1>
-            <p>Silahkan daftar terlebih dahulu.</p>
             <form action="" method="">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Username" required>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <div class="password-container">
-                    <div class="password-container2">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" required>
-                    </div>
-                    <div class="password-container2">
-                        <label for="password2">Konfirmasi Password</label>
-                        <input type="password" name="password2" id="password2" placeholder="Konfirmasi Password" required>
-                    </div>
-                </div>
-    
-                <div class="checkbox-container">
-                    <input type="checkbox" name="checkbox" id="checkbox" required> Saya menyetujui
-                    <a href="" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
-                    dan
-                    <a href="" onclick="return showLoader(event)">Kebijakan Privasi</a>
-                </div>
+                <input type="text" name="nomor-telepon" id="nomor-telepon" class="nomor-telepon" placeholder="No. Handphone" required>
     
                 <button type="submit" id="daftar-btn">Daftar</button>
     
-                <div class="have-account">Sudah punya akun?
-                    <a href="masuk.html" onclick="return showLoader(event)">Masuk</a>
+                <div class="con-other">
+                    <div class="other-child">
+                        <hr>
+                        atau
+                        <hr>
+                    </div>
+
+                    <a href="">
+                        <img src="img/logo/google.png" alt="">
+                        Google
+                    </a>
+
+                    <a href="">
+                        <img src="img/logo/facebook.png" alt="">
+                        Facebook
+                    </a>
                 </div>
+
+                <div class="have-account">Sudah punya akun?
+                    <a href="masuk.html" onclick="return showLoader(event)">Login</a>
+                </div>
+
             </form>
         </div>
 
+    </div>
+
     <footer>
 
-        <div class="ftr-container">
-            <div class="ftr-title">Logo</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-container">
-                <a href="about.html">Tentang Kami</a>
-                <a href="">Kebijakan Privasi</a>
-                <a href="">Syarat dan Ketentuan</a>
-            </div>
-        </div>
-
-        <div class="ftr-container">
-            <div class="ftr-title">Layanan Pelanggan</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-container">
-                <a href="">Bantuan</a>
-                <a href="">Cara Pembelian & Pembayaran</a>
-            </div>
-        </div>
-
-        <div class="ftr-container">
-            <div class="ftr-title">Daftar & Login</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-container">
-                <a href="daftar.html">Daftar</a>
-                <a href="masuk.html">Login</a>
-            </div>
-        </div>
-
-        <div class="ftr-container">
-            <div class="ftr-title">Kategori Produk</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-container">
-                <a href="">Pria</a>
-                <a href="">Wanita</a>
-            </div>
-        </div>
-
-        <div class="ftr-container">
-            <div class="ftr-title">Kontak Kami</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-container">
-                <a href="">Email</a>
-                <a href="">Telepon</a>
-                <a href="">Alamat</a>
-            </div>
-        </div>
-
-        <div class="ftr-container">
-            <div class="ftr-title">Ikuti Kami</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-medsos">
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
-            </div>
-        </div>
-
-        <div class="ftr-container">
-            <div class="ftr-title">Metode Pembayaran</div>
-            <div class="ftr-hr"></div>
-            <div class="ftr-link-container">
-                <div class="ftr-link-2">
-                    <img src="img/payment/gopay.png" alt="">
-                    <img src="img/payment/dana.png" alt="">
-                    <img src="img/payment/ovo.png" alt="">
-                    <img src="img/payment/bank.png" alt="">
-                    <img src="img/payment/bca.png" alt="">
-                    <img src="img/payment/paypal.png" alt="">
-                    <img src="img/payment/seabank.png" alt="">
-                    <img src="img/payment/qris.png" alt="">
-                    <img src="img/payment/linkaja.png" alt="">
+            <div class="ftr-container">
+                <div class="ftr-title">Logo</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="about.html" onclick="return showLoader(event)">Tentang Kami</a>
+                    <a href="kebijakan-privasi.html" onclick="return showLoader(event)">Kebijakan Privasi</a>
+                    <a href="syarat-ketentuan.html" onclick="return showLoader(event)">Syarat dan Ketentuan</a>
                 </div>
             </div>
-        </div>
 
-        <div class="copyright">&copy; Copyright 2025. All rights reserved</div>
-    </footer>
+            <div class="ftr-container">
+                <div class="ftr-title">Layanan Pelanggan</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="bantuan.html" onclick="return showLoader(event)">Bantuan</a>
+                    <a href="pembelian-pembayaran.html" onclick="return showLoader(event)">Cara Pembelian & Pembayaran</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Daftar & Login</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="daftar.html" onclick="return showLoader(event)">Daftar</a>
+                    <a href="masuk.html" onclick="return showLoader(event)">Login</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kategori Produk</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="index.html" onclick="return showLoader(event)">Semua Produk</a>
+                    <a href="produk-pria.html" onclick="return showLoader(event)">Pria</a>
+                    <a href="produk-wanita.html" onclick="return showLoader(event)">Wanita</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Kontak Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <a href="mailto:fashvibe@gmail.com">Email</a>
+                    <a href="https://wa.me/628123456789">Telepon</a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Ikuti Kami</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-medsos">
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="ftr-container">
+                <div class="ftr-title">Metode Pembayaran</div>
+                <div class="ftr-hr"></div>
+                <div class="ftr-link-container">
+                    <div class="ftr-link-2">
+                        <img src="img/payment/gopay.png" alt="">
+                        <img src="img/payment/dana.png" alt="">
+                        <img src="img/payment/ovo.png" alt="">
+                        <img src="img/payment/bank.png" alt="">
+                        <img src="img/payment/bca.png" alt="">
+                        <img src="img/payment/paypal.png" alt="">
+                        <img src="img/payment/seabank.png" alt="">
+                        <img src="img/payment/qris.png" alt="">
+                        <img src="img/payment/linkaja.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">&copy; Copyright FashVibe 2025. All rights reserved</div>
+        </footer>
 
     <div class="container-loader" id="container-loader">
         <div class="loading">
