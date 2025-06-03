@@ -24,23 +24,27 @@
         place-items: center;
     }
 
+    footer {
+        width: 100%;
+    }
+
     .ftr-container {
         width: 45%;
     }
 
+    .img-container, .hdr-login-text, .hdr-text {
+        display: none;
+    }
+
+    .main {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
 
-    .container-search-bar {
-        display: none;
-    }
-
-    .nav-hr {
-        display: none;
-    }
-
-    .daftar-btn, .masuk-btn {
+    .container-search-bar, .nav-hr, .daftar-btn, .masuk-btn {
         display: none;
     }
 
