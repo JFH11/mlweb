@@ -1,4 +1,7 @@
 @media screen and (max-width: 480px) {
+    body { 
+        width: 100%;
+    }
     .container-search-bar {
         display: none;
     }
@@ -32,19 +35,18 @@
         width: 45%;
     }
 
-    .img-container, .hdr-login-text, .hdr-text {
-        display: none;
-    }
-
-    .main {
-        justify-content: center;
-        align-items: center;
+    .container-keranjang {
+        width: 95%;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
 
     .container-search-bar, .nav-hr, .daftar-btn, .masuk-btn {
+        display: none;
+    }
+
+    .home-btn {
         display: none;
     }
 
@@ -63,6 +65,10 @@
 
     .ftr-container {
         width: 31%;
+    }
+
+    .container-keranjang {
+        height: 200px;
     }
 
     .main {

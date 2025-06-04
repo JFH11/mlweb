@@ -22,7 +22,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: auto;
-    width: auto;
+    width: 100%;
     padding: 0;
 }
 
@@ -498,7 +498,7 @@ footer {
 /* btn utk munculin keranjang */
 .container-keranjang {
     position: fixed;
-    top: 120px;
+    top: -400px;
     width: 550px;
     height: 400px;
     display: flex;
@@ -512,8 +512,6 @@ footer {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 99;
     color: var(--font-color);
-    visibility: hidden;
-    transform: scale(0);
     transition: all 0.2s ease-in-out;
 }
 

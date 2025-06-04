@@ -26,6 +26,7 @@
         
         body {
             background: var(--coklat-color);
+            width: 100%;
         }
 
         header {
@@ -211,6 +212,65 @@
             height: 1.5rem;
         }
 
+        @media screen and (max-width: 480px) {
+
+            body {
+                background: var(--component-color);
+            }
+
+            .hdr-login-text {
+                display: none;
+            }
+
+            .img-container {
+                display: none;
+            }
+
+            .main {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0px;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+                background: var(--component-color);
+            }
+
+            .form-container {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            .nomor-telepon {
+                border: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+
+            .main {
+                gap: 100px;
+            }
+
+            .img-container {
+                width: 300px;
+                height: max-content;
+            }
+
+            .img-container p {
+                font-size: 1.2rem;
+            }
+
+            .img-container img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
     </style>
 </head>
 
@@ -219,7 +279,7 @@
     <header>
         <img class="logo" src="img/logo/logo.webp"></img>
         <div class="hdr-login-text">Daftar</div>
-        <a href="bantuan.html" class="bantuan-btn">Butuh Bantuan?</a>
+        <a href="bantuan.html" class="bantuan-btn" onclick="return showLoader(event)">Butuh Bantuan?</a>
     </header>
 
     <div class="main">
@@ -231,7 +291,10 @@
         </div>
 
         <div class="form-container">
-            <h1>Daftar</h1>
+            <div class="form-container-child">
+                <h1>Daftar</h1>
+                <a href="index.html" class="btn-back"></a>
+            </div>
             <form action="" method="">
                 <input type="text" name="nomor-telepon" id="nomor-telepon" class="nomor-telepon" placeholder="No. Handphone" required>
     
