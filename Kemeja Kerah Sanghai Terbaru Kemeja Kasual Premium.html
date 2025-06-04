@@ -11,7 +11,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile_phone.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -42,6 +42,9 @@
 
             <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)">Login</a>
             <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)">Daftar</a>
+            <button type="button" class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -97,10 +100,32 @@
       </div>
       <div class="deskripsi" id="deskripsi_produk">
         <h4>Deskripsi: </h4>
-        <p id="deskripsi">tersedia warna Biru Muda & Hitam dengan ukuran:<br><br>
-            S<br>
-            M<br>
-            L</p>
+        <p id="deskripsi">
+          kemeja pria lengan panjang kerah Shanghai pria terbaru premium : selamat datang semoga anda selalu puas belanja di tokoh kami . warna sama ukuran pas
+<br><br>
+Detail Ukuran<br><br>
+
+• Size S<br>
+LB 43 cm<br>
+LD 49 cm<br>
+panjang 70cm<br><br>
+
+• Size M<br>
+LB 45 cm<br>
+LD 51cm<br>
+panjang 72cm<br><br>
+
+• Size L<br>
+LB 47 cm<br>
+LD 53 cm<br>
+panjang 73cm<br><br>
+
+Tersedia Ukuran Jumbo, Silahkan chat admin<br><br>
+
+Note!!<br>
+"Jika ada kesalahan pengiriman, barang reject dll, toko kami akan tanggung jawab<br>
+*Syarat : Chat admin terlebih dahulu, dan belum memberikan ulasan negatif
+          </p>
       </div>
     </div>
   </div>
@@ -134,12 +159,96 @@
     </div>
 
     <div class="keranjang-beli">
-        <button type="button" class="keranjang">
-          <i class="fa-solid fa-cart-shopping"></i> Keranjang
-        </button>
+        <button type="button" class="keranjang">Keranjang</button>
         <button type="button" class="beli">Beli</button>
     </div>
   </div>
+
+  <!-- handphone detail produk -->
+  <div class="con-mobile-detail">
+    <h1>Detail Produk</h1>
+    <div class="con-mbl-dtl">
+
+      <div class="con-mbl-dtl-child-1">
+        <p>Kondisi</p>
+      </div>
+
+      <div class="con-mbl-dtl-child-2">
+        <p>Baru</p>
+      </div>
+
+    </div>
+    <h1>Deskripsi</h1>
+    <p>
+      kemeja pria lengan panjang kerah Shanghai pria terbaru premium : selamat datang semoga anda selalu puas belanja di tokoh kami . warna sama ukuran pas
+<br><br>
+Detail Ukuran<br><br>
+
+• Size S<br>
+LB 43 cm<br>
+LD 49 cm<br>
+panjang 70cm<br><br>
+
+• Size M<br>
+LB 45 cm<br>
+LD 51cm<br>
+panjang 72cm<br><br>
+
+• Size L<br>
+LB 47 cm<br>
+LD 53 cm<br>
+panjang 73cm<br><br>
+
+Tersedia Ukuran Jumbo, Silahkan chat admin<br><br>
+
+Note!!<br>
+"Jika ada kesalahan pengiriman, barang reject dll, toko kami akan tanggung jawab<br>
+*Syarat : Chat admin terlebih dahulu, dan belum memberikan ulasan negatif
+</p>
+  </div>
+</div>
+
+<!-- handphone checkout produk -->
+ <div class="container-checkout-hp">
+  <div class="con-checkout-hp-child">
+    <h3>Jumlah Pembelian</h3>
+    <div class="con-checkout-img-hp">
+      <img src="img/product/kemeja kerah sanghai Biru Muda.webp" alt="wush_club" />
+
+      <div class="con-checkout-img-hp2">
+        <p class="checkout-title" id="nama_checkout">Kemeja Kerah Sanghai Terbaru Kemeja Kasual Premium</p>
+        <p class="checkout-warna">Warna: Biru Muda</p>
+        <p class="checkout-ukuran">Size: S</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="con-checkout-hp-child2">
+    <div class="angka-container-hp">
+      <button type="button" class="minus">-</button>
+      <div class="angka">1</div>
+      <button type="button" class="plus">+</button>
+    </div>
+
+    <div class="con-stok-hp">
+      Stok: 999+
+        <div class="stok" id="stok_produk"></div>
+    </div>
+  </div>
+
+  <div class="hr-checkout-hp"></div>
+  <div class="subtotal-hp">
+    <p>Subtotal</p>
+    <div class="price">Rp 72.000</div>
+  </div>
+
+   <div class="con-mobile-checkout">
+    <button class="btn-keranjang-handphone">Keranjang</button>
+    <button class="btn-beli-handphone">  Beli</button>
+   </div>
+ </div>
+
 </div>
 
         <footer>
@@ -233,6 +342,18 @@
 
     <div class="container-keranjang">
         <h3>keranjang belanja kosong</h3>
+    </div>
+
+    <div class="menu-container">
+        <div class="con-menu-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Cari Produk">
+        </div>
+        <a href="index.html" onclick="return showLoader(event)"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="produk-pria.html" onclick="return showLoader(event)"><i class="fa-solid fa-shirt"></i> Pria</a>
+        <a href="produk-wanita.html" onclick="return showLoader(event)"><i class="fa-solid fa-shirt"></i> Wanita</a>
+        <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)"><i class="fa-solid fa-user"></i> Masuk</a>
+        <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)"><i class="fa-solid fa-user-plus"></i> Daftar</a>
     </div>
 
     <script src="js/index.js"></script>

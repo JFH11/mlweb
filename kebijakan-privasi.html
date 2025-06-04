@@ -10,6 +10,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -160,6 +161,33 @@
   color: var(--font-color);
   font-family: sans-serif;
   margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .con-kebijakan {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .con-kebijakan-1 {
+    width: 100%;
+  }
+
+  .con-kebijakan-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .con-kebijakan {
+    gap: 2rem;
+  }
+  .con-kebijakan-1 {
+    width: 40%;
+  }
+
+  .con-kebijakan-2 {
+    width: 60%;
+  }
 }
   </style>
 </head>

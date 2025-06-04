@@ -10,6 +10,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -130,6 +131,58 @@ header {
 
         .information-card p {
           font-size: 1rem;
+        }
+
+        @media screen and (max-width: 480px) {
+          .about-container {
+            flex-direction: column;
+            height: auto;
+            padding: 2rem;
+            gap: 1rem;
+          }
+          .about-child-1 {
+            width: 100%;
+          }
+
+          .about-child-2 {
+            width: 100%;
+            display: none;
+          }
+
+          .information {
+            padding: 2rem;
+            flex-wrap: wrap;
+          }
+
+          .information-card {
+            width: 100%;
+          }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 1024px) {
+          .about-container {
+            flex-direction: column;
+            height: auto;
+            padding: 2rem;
+            gap: 1rem;
+          }
+          .about-child-1 {
+            width: 100%;
+          }
+
+          .about-child-2 {
+            width: 100%;
+            display: none;
+          }
+
+          .information {
+            padding: 2rem;
+            flex-wrap: wrap;
+          }
+
+          .information-card {
+            width: 100%;
+          }
         }
      </style>
 </head>

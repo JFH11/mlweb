@@ -10,7 +10,7 @@
 
   <!-- css -->
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/mobile_phone.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -65,6 +65,18 @@
       border-radius: 5px;
       font-size: 0.9rem;
       color: var(--font-color);
+      animation: fadeDown 1s ease-in-out;
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .con-kebijakan-1 h2 {
@@ -134,6 +146,34 @@
     .con-kebijakan-2-child ul li {
       font-family: sans-serif;
     }
+
+    @media screen and (max-width: 480px) {
+  .con-kebijakan {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .con-kebijakan-1 {
+    width: 100%;
+  }
+
+  .con-kebijakan-2 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .con-kebijakan {
+    gap: 2rem;
+  }
+  .con-kebijakan-1 {
+    width: 40%;
+  }
+
+  .con-kebijakan-2 {
+    width: 60%;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -287,12 +327,17 @@
 
         <script>
             function showLoader(event) {
-                event.preventDefault();
-                document.getElementById("container-loader").style.display = "flex";
-                setTimeout(function() {
-                    window.location.href = event.target.href;
-                }, 2000);
-            }
+  event.preventDefault();
+  event.stopPropagation();
+  let loader = document.getElementById("container-loader");
+  loader.style.display = "grid";
+
+  let targetUrl = event.currentTarget.href;
+
+  setTimeout(function () {
+    window.location.href = targetUrl;
+  }, 700);
+}
         </script>
 </body>
 </html>

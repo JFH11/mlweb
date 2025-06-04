@@ -11,7 +11,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile_phone.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/b0ce53bf51.js" crossorigin="anonymous"></script>
@@ -42,6 +42,9 @@
 
             <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)">Login</a>
             <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)">Daftar</a>
+            <button type="button" class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
 
@@ -97,10 +100,34 @@
       </div>
       <div class="deskripsi" id="deskripsi_produk">
         <h4>Deskripsi: </h4>
-        <p id="deskripsi">tersedia warna cream dan mocca dengan ukuran:<br><br>
-            S<br>
-            M<br>
-            L</p>
+        <p id="deskripsi">Cargo Pants Highwaist<br>
+Bahan Cotton Twill Combed strect<br>
+Textur bahan lembut tebal halus dan melar<br>
+Model kulot saku cargo<br>
+pinggang belakang karet elastis<br>
+pinggang depan di lengkapi kancing dan resleting<br><br>
+
+
+Warna : Cream. Mocca.<br><br>
+
+
+Detail Size:<br>
+STANDAR<br>
+Lingkar Pinggang 64-96cm<br>
+Lingkar Paha -+66cm<br>
+Panjang Celana 96cm<br>
+Muat BB 45-55kg<br><br>
+
+
+JUMBO<br>
+Lingkar Pinggang 75-102cm<br>
+Lingkar Paha -+75cm<br>
+Panjang Celana 96cm<br>
+Muat BB 55-65kg<br><br>
+
+
+Silahkan sebelum order wajib baca Deskripsi untuk menyesuaikan ukuran ukuran dan warna yang di inginkan
+</p>
       </div>
     </div>
   </div>
@@ -134,12 +161,98 @@
     </div>
 
     <div class="keranjang-beli">
-        <button type="button" class="keranjang">
-          <i class="fa-solid fa-cart-shopping"></i> Keranjang
-        </button>
+        <button type="button" class="keranjang">Keranjang</button>
         <button type="button" class="beli">Beli</button>
     </div>
   </div>
+
+  <!-- handphone detail produk -->
+  <div class="con-mobile-detail">
+    <h1>Detail Produk</h1>
+    <div class="con-mbl-dtl">
+
+      <div class="con-mbl-dtl-child-1">
+        <p>Kondisi</p>
+      </div>
+
+      <div class="con-mbl-dtl-child-2">
+        <p>Baru</p>
+      </div>
+
+    </div>
+    <h1>Deskripsi</h1>
+    <p>Cargo Pants Highwaist<br>
+Bahan Cotton Twill Combed strect<br>
+Textur bahan lembut tebal halus dan melar<br>
+Model kulot saku cargo<br>
+pinggang belakang karet elastis<br>
+pinggang depan di lengkapi kancing dan resleting<br><br>
+
+
+Warna : Cream. Mocca.<br><br>
+
+
+Detail Size:<br>
+STANDAR<br>
+Lingkar Pinggang 64-96cm<br>
+Lingkar Paha -+66cm<br>
+Panjang Celana 96cm<br>
+Muat BB 45-55kg<br><br>
+
+
+JUMBO<br>
+Lingkar Pinggang 75-102cm<br>
+Lingkar Paha -+75cm<br>
+Panjang Celana 96cm<br>
+Muat BB 55-65kg<br><br>
+
+
+Silahkan sebelum order wajib baca Deskripsi untuk menyesuaikan ukuran ukuran dan warna yang di inginkan
+</p>
+  </div>
+</div>
+
+<!-- handphone checkout produk -->
+ <div class="container-checkout-hp">
+  <div class="con-checkout-hp-child">
+    <h3>Jumlah Pembelian</h3>
+    <div class="con-checkout-img-hp">
+      <img src="img/product/Celana Cargo Wanita Katun Twill Stretch Highwaist Loose Korean cream.webp" alt="wush_club" />
+
+      <div class="con-checkout-img-hp2">
+        <p class="checkout-title" id="nama_checkout">Celana Cargo Wanita Katun Twill Stretch Highwaist Loose Korean</p>
+        <p class="checkout-warna">Warna: Cream</p>
+        <p class="checkout-ukuran">Size: S</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="con-checkout-hp-child2">
+    <div class="angka-container-hp">
+      <button type="button" class="minus">-</button>
+      <div class="angka">1</div>
+      <button type="button" class="plus">+</button>
+    </div>
+
+    <div class="con-stok-hp">
+      Stok: 999+
+        <div class="stok" id="stok_produk"></div>
+    </div>
+  </div>
+
+  <div class="hr-checkout-hp"></div>
+  <div class="subtotal-hp">
+    <p>Subtotal</p>
+    <div class="price">Rp 76.000</div>
+  </div>
+
+   <div class="con-mobile-checkout">
+    <button class="btn-keranjang-handphone">Keranjang</button>
+    <button class="btn-beli-handphone">  Beli</button>
+   </div>
+ </div>
+
 </div>
 
         <footer>
@@ -235,6 +348,18 @@
         <h3>keranjang belanja kosong</h3>
     </div>
 
+    <div class="menu-container">
+        <div class="con-menu-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Cari Produk">
+        </div>
+        <a href="index.html" onclick="return showLoader(event)"><i class="fa-solid fa-house"></i> Beranda</a>
+        <a href="produk-pria.html" onclick="return showLoader(event)"><i class="fa-solid fa-shirt"></i> Pria</a>
+        <a href="produk-wanita.html" onclick="return showLoader(event)"><i class="fa-solid fa-shirt"></i> Wanita</a>
+        <a href="masuk.html" class="masuk-btn" onclick="return showLoader(event)"><i class="fa-solid fa-user"></i> Masuk</a>
+        <a href="daftar.html" class="daftar-btn" onclick="return showLoader(event)"><i class="fa-solid fa-user-plus"></i> Daftar</a>
+    </div>
+    
     <script src="js/index.js"></script>
 </body>
 
