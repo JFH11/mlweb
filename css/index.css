@@ -522,10 +522,10 @@ footer {
 }
 
 
-/* btn utk munculin keranjang */
+/* keranjang */
 .container-keranjang {
     position: fixed;
-    top: -400px;
+    top: 100px;
     width: 550px;
     height: 400px;
     display: flex;
@@ -538,6 +538,7 @@ footer {
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     z-index: 99;
+    visibility: hidden;
     color: var(--font-color);
     transition: all 0.2s ease-in-out;
 }

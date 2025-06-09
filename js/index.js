@@ -18,7 +18,7 @@ let munculKeranjang = false;
 
 keranjangBtn.addEventListener("click", () => {
   munculKeranjang = !munculKeranjang;
-  keranjang.style.top = munculKeranjang ? '120px' : '-400px';
+  keranjang.style.visibility = munculKeranjang ? 'visible' : 'hidden';
   keranjang.style.transform = munculKeranjang ? 'scale(1)' : 'scale(0)';
   maink.style.filter = munculKeranjang ? 'blur(5px)' : 'none';
   maink.style.pointerEvents = munculKeranjang ? 'none' : 'auto';

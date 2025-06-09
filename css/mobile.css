@@ -1,6 +1,7 @@
 @media screen and (max-width: 480px) {
-    body { 
-        width: 100%;
+    html, body { 
+        max-width: 100%;
+        overflow-x: hidden;
     }
     .container-search-bar {
         display: none;
